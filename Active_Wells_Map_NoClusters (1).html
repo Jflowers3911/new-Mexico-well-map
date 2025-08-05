@@ -1,0 +1,2182 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d90729569a148d70c9038088dda5c11b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+<div style='position: fixed; bottom: 30px; left: 30px; width: 320px; max-height: 300px; overflow-y: auto; 
+z-index:9999; font-size:13px; background-color: white; border:1px solid grey; padding: 10px'>
+<b>Company Legend</b><br>
+<div style='display:inline-block;width:12px;height:12px;background-color:#1f77b4;margin-right:5px;'></div>NOVO OIL & GAS NORTHERN DELAWARE, LLC (3)<br><div style='display:inline-block;width:12px;height:12px;background-color:#aec7e8;margin-right:5px;'></div>EOG RESOURCES INC (21)<br><div style='display:inline-block;width:12px;height:12px;background-color:#ff7f0e;margin-right:5px;'></div>MEWBOURNE OIL CO (22)<br><div style='display:inline-block;width:12px;height:12px;background-color:#2ca02c;margin-right:5px;'></div>MATADOR PRODUCTION COMPANY (11)<br><div style='display:inline-block;width:12px;height:12px;background-color:#98df8a;margin-right:5px;'></div>Coterra Energy Operating Co. (10)<br><div style='display:inline-block;width:12px;height:12px;background-color:#ff9896;margin-right:5px;'></div>MACK ENERGY CORP (1)<br><div style='display:inline-block;width:12px;height:12px;background-color:#9467bd;margin-right:5px;'></div>CHEVRON U S A INC (9)<br><div style='display:inline-block;width:12px;height:12px;background-color:#8c564b;margin-right:5px;'></div>Permian Resources Operating, LLC (17)<br><div style='display:inline-block;width:12px;height:12px;background-color:#c49c94;margin-right:5px;'></div>MARSHALL & WINSTON INC (2)<br><div style='display:inline-block;width:12px;height:12px;background-color:#e377c2;margin-right:5px;'></div>BTA OIL PRODUCERS, LLC (1)<br><div style='display:inline-block;width:12px;height:12px;background-color:#7f7f7f;margin-right:5px;'></div>Texas Standard Operating NM LLC (1)<br><div style='display:inline-block;width:12px;height:12px;background-color:#c7c7c7;margin-right:5px;'></div>XTO PERMIAN OPERATING LLC. (8)<br><div style='display:inline-block;width:12px;height:12px;background-color:#dbdb8d;margin-right:5px;'></div>3R Operating, LLC (2)<br><div style='display:inline-block;width:12px;height:12px;background-color:#17becf;margin-right:5px;'></div>Spur Energy Partners LLC (1)<br><div style='display:inline-block;width:12px;height:12px;background-color:#9edae5;margin-right:5px;'></div>Paloma Permian AssetCo, LLC (2)<br></div>
+    
+            <div class="folium-map" id="map_d90729569a148d70c9038088dda5c11b" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_d90729569a148d70c9038088dda5c11b = L.map(
+                "map_d90729569a148d70c9038088dda5c11b",
+                {
+                    center: [33.5, -104.5],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_14debd69cf896f6a2e8247e216f89079 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+            var circle_marker_fa1c3513e83579414fc2a980939bfdbf = L.circleMarker(
+                [32.299013531239595, -104.04829194056686],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_e86bc7b3e77439e6abe6a6320a12347c = L.popup({"maxWidth": 300});
+
+        
+            var html_4958b447932a9c10852da6a827775ae1 = $(`<div id="html_4958b447932a9c10852da6a827775ae1" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> OVATION FEDERAL COM 1318 #136H<br>     <b>Company:</b> NOVO OIL & GAS NORTHERN DELAWARE, LLC<br>     <b>Distance to Midland:</b> 117.4 mi<br>     <b>Distance to Carlsbad:</b> 13.5 mi     </div>`)[0];
+            popup_e86bc7b3e77439e6abe6a6320a12347c.setContent(html_4958b447932a9c10852da6a827775ae1);
+        
+
+        circle_marker_fa1c3513e83579414fc2a980939bfdbf.bindPopup(popup_e86bc7b3e77439e6abe6a6320a12347c)
+        ;
+
+        
+    
+    
+            var circle_marker_adca04b8d0e2e0d9c4c0eb8ef9b0f65d = L.circleMarker(
+                [32.29895863123034, -104.0482925405636],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_c2169160241d394efc9105d376426e89 = L.popup({"maxWidth": 300});
+
+        
+            var html_ffeb8fc1b697d681e6b3b30a29583428 = $(`<div id="html_ffeb8fc1b697d681e6b3b30a29583428" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> OVATION FEDERAL COM 1318 #243H<br>     <b>Company:</b> NOVO OIL & GAS NORTHERN DELAWARE, LLC<br>     <b>Distance to Midland:</b> 117.4 mi<br>     <b>Distance to Carlsbad:</b> 13.5 mi     </div>`)[0];
+            popup_c2169160241d394efc9105d376426e89.setContent(html_ffeb8fc1b697d681e6b3b30a29583428);
+        
+
+        circle_marker_adca04b8d0e2e0d9c4c0eb8ef9b0f65d.bindPopup(popup_c2169160241d394efc9105d376426e89)
+        ;
+
+        
+    
+    
+            var circle_marker_35ec695f5630b2c00049454d35aac981 = L.circleMarker(
+                [32.3353481380738, -104.03274013929916],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_38381b06443797562216cfeb9c03ef35 = L.popup({"maxWidth": 300});
+
+        
+            var html_a3c855b8a8b633dca8f1637dd4db2d36 = $(`<div id="html_a3c855b8a8b633dca8f1637dd4db2d36" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> RANA SALADA FEDERAL COM 0605 #145H<br>     <b>Company:</b> NOVO OIL & GAS NORTHERN DELAWARE, LLC<br>     <b>Distance to Midland:</b> 116.9 mi<br>     <b>Distance to Carlsbad:</b> 12.9 mi     </div>`)[0];
+            popup_38381b06443797562216cfeb9c03ef35.setContent(html_a3c855b8a8b633dca8f1637dd4db2d36);
+        
+
+        circle_marker_35ec695f5630b2c00049454d35aac981.bindPopup(popup_38381b06443797562216cfeb9c03ef35)
+        ;
+
+        
+    
+    
+            var circle_marker_7acf43e12f9f041eab68e087f2828ea5 = L.circleMarker(
+                [32.38152536120446, -103.69323916472494],
+                {"bubblingMouseEvents": true, "color": "#aec7e8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#aec7e8", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_b4e1998bd8d2e163240c2ca0a608acbf = L.popup({"maxWidth": 300});
+
+        
+            var html_03180b5208f5d36506d85dee3e9b6dbe = $(`<div id="html_03180b5208f5d36506d85dee3e9b6dbe" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> PRETTY GOOD 20 FEDERAL COM #201H<br>     <b>Company:</b> EOG RESOURCES INC<br>     <b>Distance to Midland:</b> 98.3 mi<br>     <b>Distance to Carlsbad:</b> 31.4 mi     </div>`)[0];
+            popup_b4e1998bd8d2e163240c2ca0a608acbf.setContent(html_03180b5208f5d36506d85dee3e9b6dbe);
+        
+
+        circle_marker_7acf43e12f9f041eab68e087f2828ea5.bindPopup(popup_b4e1998bd8d2e163240c2ca0a608acbf)
+        ;
+
+        
+    
+    
+            var circle_marker_f50735f59d407601dc3ba102b821df0f = L.circleMarker(
+                [32.38160736166991, -103.68323116243978],
+                {"bubblingMouseEvents": true, "color": "#aec7e8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#aec7e8", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_4430b7b196dbda3e6f0799c5b534a40a = L.popup({"maxWidth": 300});
+
+        
+            var html_34acc95c6589367a6fc0bb99f1b25776 = $(`<div id="html_34acc95c6589367a6fc0bb99f1b25776" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> PRETTY GOOD 20 FEDERAL COM #202H<br>     <b>Company:</b> EOG RESOURCES INC<br>     <b>Distance to Midland:</b> 97.7 mi<br>     <b>Distance to Carlsbad:</b> 32.0 mi     </div>`)[0];
+            popup_4430b7b196dbda3e6f0799c5b534a40a.setContent(html_34acc95c6589367a6fc0bb99f1b25776);
+        
+
+        circle_marker_f50735f59d407601dc3ba102b821df0f.bindPopup(popup_4430b7b196dbda3e6f0799c5b534a40a)
+        ;
+
+        
+    
+    
+            var circle_marker_f679a3d421636b66374b16eaac3ad615 = L.circleMarker(
+                [32.38156636121162, -103.6932351647266],
+                {"bubblingMouseEvents": true, "color": "#aec7e8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#aec7e8", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_d87fe9026a04e029bed62e1303888f1c = L.popup({"maxWidth": 300});
+
+        
+            var html_d93f1e988551f09d681a58952cf9ed58 = $(`<div id="html_d93f1e988551f09d681a58952cf9ed58" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> PRETTY GOOD 20 FEDERAL COM #301H<br>     <b>Company:</b> EOG RESOURCES INC<br>     <b>Distance to Midland:</b> 98.3 mi<br>     <b>Distance to Carlsbad:</b> 31.4 mi     </div>`)[0];
+            popup_d87fe9026a04e029bed62e1303888f1c.setContent(html_d93f1e988551f09d681a58952cf9ed58);
+        
+
+        circle_marker_f679a3d421636b66374b16eaac3ad615.bindPopup(popup_d87fe9026a04e029bed62e1303888f1c)
+        ;
+
+        
+    
+    
+            var circle_marker_10e0afcdd04a3ea81ba08bd8b1e9b89e = L.circleMarker(
+                [32.41331294434522, -104.18419517861844],
+                {"bubblingMouseEvents": true, "color": "#ff7f0e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_d6c78baa139f9de7ba24ce128b0d20f5 = L.popup({"maxWidth": 300});
+
+        
+            var html_91cfc71843f825d90f16fa139d1d73c4 = $(`<div id="html_91cfc71843f825d90f16fa139d1d73c4" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> SANDLOT 9 8 FEE #521H<br>     <b>Company:</b> MEWBOURNE OIL CO<br>     <b>Distance to Midland:</b> 126.7 mi<br>     <b>Distance to Carlsbad:</b> 2.7 mi     </div>`)[0];
+            popup_d6c78baa139f9de7ba24ce128b0d20f5.setContent(html_91cfc71843f825d90f16fa139d1d73c4);
+        
+
+        circle_marker_10e0afcdd04a3ea81ba08bd8b1e9b89e.bindPopup(popup_d6c78baa139f9de7ba24ce128b0d20f5)
+        ;
+
+        
+    
+    
+            var circle_marker_215a942a31c987ceeeb24f573b174ff5 = L.circleMarker(
+                [32.41331154435081, -104.18406587858898],
+                {"bubblingMouseEvents": true, "color": "#ff7f0e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_85a4b0e2ab77e245e05909afd4529e09 = L.popup({"maxWidth": 300});
+
+        
+            var html_6b82d480bb746cdcc06fe6c657b205cd = $(`<div id="html_6b82d480bb746cdcc06fe6c657b205cd" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> SANDLOT 9 8 FEE #523H<br>     <b>Company:</b> MEWBOURNE OIL CO<br>     <b>Distance to Midland:</b> 126.7 mi<br>     <b>Distance to Carlsbad:</b> 2.7 mi     </div>`)[0];
+            popup_85a4b0e2ab77e245e05909afd4529e09.setContent(html_6b82d480bb746cdcc06fe6c657b205cd);
+        
+
+        circle_marker_215a942a31c987ceeeb24f573b174ff5.bindPopup(popup_85a4b0e2ab77e245e05909afd4529e09)
+        ;
+
+        
+    
+    
+            var circle_marker_a7964cc66295297408366a99e8de6fb5 = L.circleMarker(
+                [32.41331234434803, -104.18413057860373],
+                {"bubblingMouseEvents": true, "color": "#ff7f0e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_c6f50fcc3932449317465212cfc4f4ed = L.popup({"maxWidth": 300});
+
+        
+            var html_0cdd4beabe715c76589d567d3c8386c5 = $(`<div id="html_0cdd4beabe715c76589d567d3c8386c5" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> SANDLOT 9 8 FEE #552H<br>     <b>Company:</b> MEWBOURNE OIL CO<br>     <b>Distance to Midland:</b> 126.7 mi<br>     <b>Distance to Carlsbad:</b> 2.7 mi     </div>`)[0];
+            popup_c6f50fcc3932449317465212cfc4f4ed.setContent(html_0cdd4beabe715c76589d567d3c8386c5);
+        
+
+        circle_marker_a7964cc66295297408366a99e8de6fb5.bindPopup(popup_c6f50fcc3932449317465212cfc4f4ed)
+        ;
+
+        
+    
+    
+            var circle_marker_a6a5691d1fdf6051232c13eeb318d7e0 = L.circleMarker(
+                [32.08013182936693, -103.25086464459021],
+                {"bubblingMouseEvents": true, "color": "#2ca02c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ca02c", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_5c5c81eadbb8290fc66b227254e5769d = L.popup({"maxWidth": 300});
+
+        
+            var html_6d1f0b71db3c9f219f0dd03dd7e376f0 = $(`<div id="html_6d1f0b71db3c9f219f0dd03dd7e376f0" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> JUNIPER 25 36 34 FEDERAL COM #116H<br>     <b>Company:</b> MATADOR PRODUCTION COMPANY<br>     <b>Distance to Midland:</b> 69.1 mi<br>     <b>Distance to Carlsbad:</b> 61.9 mi     </div>`)[0];
+            popup_5c5c81eadbb8290fc66b227254e5769d.setContent(html_6d1f0b71db3c9f219f0dd03dd7e376f0);
+        
+
+        circle_marker_a6a5691d1fdf6051232c13eeb318d7e0.bindPopup(popup_5c5c81eadbb8290fc66b227254e5769d)
+        ;
+
+        
+    
+    
+            var circle_marker_2d9b3e18610f1cffab82215849de1042 = L.circleMarker(
+                [32.340489357436326, -103.62208514586874],
+                {"bubblingMouseEvents": true, "color": "#98df8a", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#98df8a", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_8a341d798a7da9e6df4d4d61e4616031 = L.popup({"maxWidth": 300});
+
+        
+            var html_c7e9426e2c1c4527b38da837e0530f59 = $(`<div id="html_c7e9426e2c1c4527b38da837e0530f59" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> CORIANDER 1 12 STATE COM #213H<br>     <b>Company:</b> Coterra Energy Operating Co.<br>     <b>Distance to Midland:</b> 93.5 mi<br>     <b>Distance to Carlsbad:</b> 35.9 mi     </div>`)[0];
+            popup_8a341d798a7da9e6df4d4d61e4616031.setContent(html_c7e9426e2c1c4527b38da837e0530f59);
+        
+
+        circle_marker_2d9b3e18610f1cffab82215849de1042.bindPopup(popup_8a341d798a7da9e6df4d4d61e4616031)
+        ;
+
+        
+    
+    
+            var circle_marker_83c42773988ed5d4e29a735f490a0e12 = L.circleMarker(
+                [32.340490357442306, -103.62195614583925],
+                {"bubblingMouseEvents": true, "color": "#98df8a", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#98df8a", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_c7a63491b1c88851e7f708473e04f26e = L.popup({"maxWidth": 300});
+
+        
+            var html_e673c366785f2bfc5d914e1fd5e8f98d = $(`<div id="html_e673c366785f2bfc5d914e1fd5e8f98d" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> CORIANDER 1 12 STATE COM #303H<br>     <b>Company:</b> Coterra Energy Operating Co.<br>     <b>Distance to Midland:</b> 93.5 mi<br>     <b>Distance to Carlsbad:</b> 35.9 mi     </div>`)[0];
+            popup_c7a63491b1c88851e7f708473e04f26e.setContent(html_e673c366785f2bfc5d914e1fd5e8f98d);
+        
+
+        circle_marker_83c42773988ed5d4e29a735f490a0e12.bindPopup(popup_c7a63491b1c88851e7f708473e04f26e)
+        ;
+
+        
+    
+    
+            var circle_marker_acf2a4064ac3d0be1a7f13b8ad934a2b = L.circleMarker(
+                [32.41493137032402, -103.6168848493367],
+                {"bubblingMouseEvents": true, "color": "#2ca02c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ca02c", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_15d0c8e545788cc9eaa43a54d449c457 = L.popup({"maxWidth": 300});
+
+        
+            var html_883773cc4e9359682e475a949afd63fe = $(`<div id="html_883773cc4e9359682e475a949afd63fe" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> PAUL FLOWERS STATE COM #111H<br>     <b>Company:</b> MATADOR PRODUCTION COMPANY<br>     <b>Distance to Midland:</b> 94.6 mi<br>     <b>Distance to Carlsbad:</b> 35.8 mi     </div>`)[0];
+            popup_15d0c8e545788cc9eaa43a54d449c457.setContent(html_883773cc4e9359682e475a949afd63fe);
+        
+
+        circle_marker_acf2a4064ac3d0be1a7f13b8ad934a2b.bindPopup(popup_15d0c8e545788cc9eaa43a54d449c457)
+        ;
+
+        
+    
+    
+            var circle_marker_4e29de3f6ed2764a6fcbdef081900b67 = L.circleMarker(
+                [32.414848770309995, -103.61688504933154],
+                {"bubblingMouseEvents": true, "color": "#2ca02c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ca02c", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_21e6137d8b0c557ff26b9a042e2f4b05 = L.popup({"maxWidth": 300});
+
+        
+            var html_d2ab96ddbfca9dedd6cd0e3116aca4da = $(`<div id="html_d2ab96ddbfca9dedd6cd0e3116aca4da" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> PAUL FLOWERS STATE COM #112H<br>     <b>Company:</b> MATADOR PRODUCTION COMPANY<br>     <b>Distance to Midland:</b> 94.6 mi<br>     <b>Distance to Carlsbad:</b> 35.8 mi     </div>`)[0];
+            popup_21e6137d8b0c557ff26b9a042e2f4b05.setContent(html_d2ab96ddbfca9dedd6cd0e3116aca4da);
+        
+
+        circle_marker_4e29de3f6ed2764a6fcbdef081900b67.bindPopup(popup_21e6137d8b0c557ff26b9a042e2f4b05)
+        ;
+
+        
+    
+    
+            var circle_marker_12e4f5101fd706be53b79066285fb373 = L.circleMarker(
+                [32.41519687086964, -103.60580974681542],
+                {"bubblingMouseEvents": true, "color": "#2ca02c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ca02c", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_0e8e233497aca6a4547a7821449c8560 = L.popup({"maxWidth": 300});
+
+        
+            var html_f3236f5d57183fdc05831dcea48bd8b0 = $(`<div id="html_f3236f5d57183fdc05831dcea48bd8b0" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> CHARLIE KS STATE COM #114H<br>     <b>Company:</b> MATADOR PRODUCTION COMPANY<br>     <b>Distance to Midland:</b> 94.0 mi<br>     <b>Distance to Carlsbad:</b> 36.4 mi     </div>`)[0];
+            popup_0e8e233497aca6a4547a7821449c8560.setContent(html_f3236f5d57183fdc05831dcea48bd8b0);
+        
+
+        circle_marker_12e4f5101fd706be53b79066285fb373.bindPopup(popup_0e8e233497aca6a4547a7821449c8560)
+        ;
+
+        
+    
+    
+            var circle_marker_2437609c05a73c70d3dba53c6382c5e9 = L.circleMarker(
+                [32.414923870630524, -103.6100738477755],
+                {"bubblingMouseEvents": true, "color": "#2ca02c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ca02c", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_9f4b4fce2e7879d1e12d1c7e24dd3fb4 = L.popup({"maxWidth": 300});
+
+        
+            var html_59ffc76d24dba6829fabc14de0dd391c = $(`<div id="html_59ffc76d24dba6829fabc14de0dd391c" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> CHARLIE KS STATE COM #113H<br>     <b>Company:</b> MATADOR PRODUCTION COMPANY<br>     <b>Distance to Midland:</b> 94.3 mi<br>     <b>Distance to Carlsbad:</b> 36.2 mi     </div>`)[0];
+            popup_9f4b4fce2e7879d1e12d1c7e24dd3fb4.setContent(html_59ffc76d24dba6829fabc14de0dd391c);
+        
+
+        circle_marker_2437609c05a73c70d3dba53c6382c5e9.bindPopup(popup_9f4b4fce2e7879d1e12d1c7e24dd3fb4)
+        ;
+
+        
+    
+    
+            var circle_marker_44a9d0998547225f158f76d80c0498fd = L.circleMarker(
+                [32.94772253645138, -104.12371769946965],
+                {"bubblingMouseEvents": true, "color": "#ff9896", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff9896", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_56f4fa61558617a8d0397824ef39172b = L.popup({"maxWidth": 300});
+
+        
+            var html_fb3e4d4d79849e0e73d2c383195f0155 = $(`<div id="html_fb3e4d4d79849e0e73d2c383195f0155" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> HUDSON BAY STATE COM #001H<br>     <b>Company:</b> MACK ENERGY CORP<br>     <b>Distance to Midland:</b> 136.3 mi<br>     <b>Distance to Carlsbad:</b> 36.8 mi     </div>`)[0];
+            popup_56f4fa61558617a8d0397824ef39172b.setContent(html_fb3e4d4d79849e0e73d2c383195f0155);
+        
+
+        circle_marker_44a9d0998547225f158f76d80c0498fd.bindPopup(popup_56f4fa61558617a8d0397824ef39172b)
+        ;
+
+        
+    
+    
+            var circle_marker_5b9bd0a68598ff057a340dc92337aef0 = L.circleMarker(
+                [32.41527537088158, -103.60583964682716],
+                {"bubblingMouseEvents": true, "color": "#2ca02c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ca02c", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_41f5962dfbfad77b1b05fba41e42dee5 = L.popup({"maxWidth": 300});
+
+        
+            var html_2e08c075565ebecbd9a7b35e99486bef = $(`<div id="html_2e08c075565ebecbd9a7b35e99486bef" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> CHARLIE KS STATE COM #147H<br>     <b>Company:</b> MATADOR PRODUCTION COMPANY<br>     <b>Distance to Midland:</b> 94.0 mi<br>     <b>Distance to Carlsbad:</b> 36.4 mi     </div>`)[0];
+            popup_41f5962dfbfad77b1b05fba41e42dee5.setContent(html_2e08c075565ebecbd9a7b35e99486bef);
+        
+
+        circle_marker_5b9bd0a68598ff057a340dc92337aef0.bindPopup(popup_41f5962dfbfad77b1b05fba41e42dee5)
+        ;
+
+        
+    
+    
+            var circle_marker_03bb3d9a6cd954d754eb6b489b093934 = L.circleMarker(
+                [32.41493137031963, -103.61698204935898],
+                {"bubblingMouseEvents": true, "color": "#2ca02c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ca02c", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_1d5e4f0f8b864108cdf19704d943da4a = L.popup({"maxWidth": 300});
+
+        
+            var html_1081c81ec44af0794782246fbfdb15e8 = $(`<div id="html_1081c81ec44af0794782246fbfdb15e8" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> PAUL FLOWERS STATE COM #145H<br>     <b>Company:</b> MATADOR PRODUCTION COMPANY<br>     <b>Distance to Midland:</b> 94.6 mi<br>     <b>Distance to Carlsbad:</b> 35.8 mi     </div>`)[0];
+            popup_1d5e4f0f8b864108cdf19704d943da4a.setContent(html_1081c81ec44af0794782246fbfdb15e8);
+        
+
+        circle_marker_03bb3d9a6cd954d754eb6b489b093934.bindPopup(popup_1d5e4f0f8b864108cdf19704d943da4a)
+        ;
+
+        
+    
+    
+            var circle_marker_cb7b9e7d3ab2dcceef46d14a9565bfc9 = L.circleMarker(
+                [32.414923970626155, -103.61017094779771],
+                {"bubblingMouseEvents": true, "color": "#2ca02c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ca02c", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_46a575a9899f492461b8dad64d9e5a86 = L.popup({"maxWidth": 300});
+
+        
+            var html_1c8aa1b1f032971285efc0d6a24aa4a3 = $(`<div id="html_1c8aa1b1f032971285efc0d6a24aa4a3" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> PAUL FLOWERS STATE COM #146H<br>     <b>Company:</b> MATADOR PRODUCTION COMPANY<br>     <b>Distance to Midland:</b> 94.3 mi<br>     <b>Distance to Carlsbad:</b> 36.2 mi     </div>`)[0];
+            popup_46a575a9899f492461b8dad64d9e5a86.setContent(html_1c8aa1b1f032971285efc0d6a24aa4a3);
+        
+
+        circle_marker_cb7b9e7d3ab2dcceef46d14a9565bfc9.bindPopup(popup_46a575a9899f492461b8dad64d9e5a86)
+        ;
+
+        
+    
+    
+            var circle_marker_5f28c1b9ad64f3c7373e91b2c3cfa701 = L.circleMarker(
+                [32.16596473370152, -103.48662720402297],
+                {"bubblingMouseEvents": true, "color": "#aec7e8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#aec7e8", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_0b15a96602846613154d5d3daa5e76ed = L.popup({"maxWidth": 300});
+
+        
+            var html_05bb47adc0a5519a9660eb71c664315f = $(`<div id="html_05bb47adc0a5519a9660eb71c664315f" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> SHIPROCK 5 FED COM #402H<br>     <b>Company:</b> EOG RESOURCES INC<br>     <b>Distance to Midland:</b> 83.5 mi<br>     <b>Distance to Carlsbad:</b> 46.8 mi     </div>`)[0];
+            popup_0b15a96602846613154d5d3daa5e76ed.setContent(html_05bb47adc0a5519a9660eb71c664315f);
+        
+
+        circle_marker_5f28c1b9ad64f3c7373e91b2c3cfa701.bindPopup(popup_0b15a96602846613154d5d3daa5e76ed)
+        ;
+
+        
+    
+    
+            var circle_marker_6093984b20db2c035d522eeb35e89811 = L.circleMarker(
+                [32.38324236140424, -103.69526916529703],
+                {"bubblingMouseEvents": true, "color": "#aec7e8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#aec7e8", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_c438aa078d8ea19e9c4c4ae6e7cbaf51 = L.popup({"maxWidth": 300});
+
+        
+            var html_0338dd7ee9062d8f648ca114334ffb63 = $(`<div id="html_0338dd7ee9062d8f648ca114334ffb63" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> PRETTY GOOD 20 FEDERAL COM #204H<br>     <b>Company:</b> EOG RESOURCES INC<br>     <b>Distance to Midland:</b> 98.4 mi<br>     <b>Distance to Carlsbad:</b> 31.3 mi     </div>`)[0];
+            popup_c438aa078d8ea19e9c4c4ae6e7cbaf51.setContent(html_0338dd7ee9062d8f648ca114334ffb63);
+        
+
+        circle_marker_6093984b20db2c035d522eeb35e89811.bindPopup(popup_c438aa078d8ea19e9c4c4ae6e7cbaf51)
+        ;
+
+        
+    
+    
+            var circle_marker_edfc6588d473b7847154c8094a2eb99a = L.circleMarker(
+                [32.38306436126645, -103.6976531658314],
+                {"bubblingMouseEvents": true, "color": "#aec7e8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#aec7e8", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_10e9e4d79912dfcbd14a7b5c8514c04e = L.popup({"maxWidth": 300});
+
+        
+            var html_2c1104fc8cba63a0cc9826629aa20e9e = $(`<div id="html_2c1104fc8cba63a0cc9826629aa20e9e" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> PRETTY GOOD 20 FEDERAL COM #205H<br>     <b>Company:</b> EOG RESOURCES INC<br>     <b>Distance to Midland:</b> 98.6 mi<br>     <b>Distance to Carlsbad:</b> 31.2 mi     </div>`)[0];
+            popup_10e9e4d79912dfcbd14a7b5c8514c04e.setContent(html_2c1104fc8cba63a0cc9826629aa20e9e);
+        
+
+        circle_marker_edfc6588d473b7847154c8094a2eb99a.bindPopup(popup_10e9e4d79912dfcbd14a7b5c8514c04e)
+        ;
+
+        
+    
+    
+            var circle_marker_caee58276c0ce8820e8fb36860071876 = L.circleMarker(
+                [32.38298136125242, -103.6976531658262],
+                {"bubblingMouseEvents": true, "color": "#aec7e8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#aec7e8", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_9d2f3ba28e68f5b28ff891c635f47741 = L.popup({"maxWidth": 300});
+
+        
+            var html_9330bac8cf0c393e0cd1f429bcb4d316 = $(`<div id="html_9330bac8cf0c393e0cd1f429bcb4d316" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> PRETTY GOOD 20 FEDERAL COM #206H<br>     <b>Company:</b> EOG RESOURCES INC<br>     <b>Distance to Midland:</b> 98.6 mi<br>     <b>Distance to Carlsbad:</b> 31.2 mi     </div>`)[0];
+            popup_9d2f3ba28e68f5b28ff891c635f47741.setContent(html_9330bac8cf0c393e0cd1f429bcb4d316);
+        
+
+        circle_marker_caee58276c0ce8820e8fb36860071876.bindPopup(popup_9d2f3ba28e68f5b28ff891c635f47741)
+        ;
+
+        
+    
+    
+            var circle_marker_a3431d11b709421914fc3b6ca916e5d9 = L.circleMarker(
+                [32.38324636140713, -103.69522116528633],
+                {"bubblingMouseEvents": true, "color": "#aec7e8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#aec7e8", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_4e23f5805519430354ebd733f15701cc = L.popup({"maxWidth": 300});
+
+        
+            var html_083787d202981ade23afb5f96aabc27c = $(`<div id="html_083787d202981ade23afb5f96aabc27c" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> PRETTY GOOD 20 FEDERAL COM #302H<br>     <b>Company:</b> EOG RESOURCES INC<br>     <b>Distance to Midland:</b> 98.4 mi<br>     <b>Distance to Carlsbad:</b> 31.3 mi     </div>`)[0];
+            popup_4e23f5805519430354ebd733f15701cc.setContent(html_083787d202981ade23afb5f96aabc27c);
+        
+
+        circle_marker_a3431d11b709421914fc3b6ca916e5d9.bindPopup(popup_4e23f5805519430354ebd733f15701cc)
+        ;
+
+        
+    
+    
+            var circle_marker_8489eb9fec77b9db3c7e83ba85a4e314 = L.circleMarker(
+                [32.16514413327079, -103.49317620547552],
+                {"bubblingMouseEvents": true, "color": "#aec7e8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#aec7e8", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_a64c2d4c23a579be83bdc0abd095f2c4 = L.popup({"maxWidth": 300});
+
+        
+            var html_abb33c2463b27b7cc70a4bbe3ba0974e = $(`<div id="html_abb33c2463b27b7cc70a4bbe3ba0974e" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> SHIPROCK 5 FED COM #403H<br>     <b>Company:</b> EOG RESOURCES INC<br>     <b>Distance to Midland:</b> 83.8 mi<br>     <b>Distance to Carlsbad:</b> 46.5 mi     </div>`)[0];
+            popup_a64c2d4c23a579be83bdc0abd095f2c4.setContent(html_abb33c2463b27b7cc70a4bbe3ba0974e);
+        
+
+        circle_marker_8489eb9fec77b9db3c7e83ba85a4e314.bindPopup(popup_a64c2d4c23a579be83bdc0abd095f2c4)
+        ;
+
+        
+    
+    
+            var circle_marker_e3089549e9bcf34071b587a58e5a60ba = L.circleMarker(
+                [32.02525827815712, -104.20070925831418],
+                {"bubblingMouseEvents": true, "color": "#9467bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9467bd", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_a91277397ae860ffe98b5f402560995d = L.popup({"maxWidth": 300});
+
+        
+            var html_3390efa25afe5abc4dcc30fb4b701078 = $(`<div id="html_3390efa25afe5abc4dcc30fb4b701078" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> ANGELS ENVY 21 FEDERAL #216H<br>     <b>Company:</b> CHEVRON U S A INC<br>     <b>Distance to Midland:</b> 124.6 mi<br>     <b>Distance to Carlsbad:</b> 27.3 mi     </div>`)[0];
+            popup_a91277397ae860ffe98b5f402560995d.setContent(html_3390efa25afe5abc4dcc30fb4b701078);
+        
+
+        circle_marker_e3089549e9bcf34071b587a58e5a60ba.bindPopup(popup_a91277397ae860ffe98b5f402560995d)
+        ;
+
+        
+    
+    
+            var circle_marker_4b0095f2ae72f60c00628f3901923853 = L.circleMarker(
+                [32.025753278239925, -104.20073225834949],
+                {"bubblingMouseEvents": true, "color": "#9467bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9467bd", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_c350ac0eea9547904e87b9d462f47ab8 = L.popup({"maxWidth": 300});
+
+        
+            var html_7cca5a350d2430c2e176fac051656561 = $(`<div id="html_7cca5a350d2430c2e176fac051656561" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> ANGELS ENVY 21 FEDERAL #217H<br>     <b>Company:</b> CHEVRON U S A INC<br>     <b>Distance to Midland:</b> 124.6 mi<br>     <b>Distance to Carlsbad:</b> 27.3 mi     </div>`)[0];
+            popup_c350ac0eea9547904e87b9d462f47ab8.setContent(html_7cca5a350d2430c2e176fac051656561);
+        
+
+        circle_marker_4b0095f2ae72f60c00628f3901923853.bindPopup(popup_c350ac0eea9547904e87b9d462f47ab8)
+        ;
+
+        
+    
+    
+            var circle_marker_52d400687f48a260c4434a0d16b91846 = L.circleMarker(
+                [32.025698278230635, -104.20073225834615],
+                {"bubblingMouseEvents": true, "color": "#9467bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9467bd", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_4c2d9d0b1bb6cec8308c1a261b62552e = L.popup({"maxWidth": 300});
+
+        
+            var html_def2e60cbf96d32536694a8653962656 = $(`<div id="html_def2e60cbf96d32536694a8653962656" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> ANGELS ENVY 21 FEDERAL #218H<br>     <b>Company:</b> CHEVRON U S A INC<br>     <b>Distance to Midland:</b> 124.6 mi<br>     <b>Distance to Carlsbad:</b> 27.3 mi     </div>`)[0];
+            popup_4c2d9d0b1bb6cec8308c1a261b62552e.setContent(html_def2e60cbf96d32536694a8653962656);
+        
+
+        circle_marker_52d400687f48a260c4434a0d16b91846.bindPopup(popup_4c2d9d0b1bb6cec8308c1a261b62552e)
+        ;
+
+        
+    
+    
+            var circle_marker_57c856113bee42c55fa2b42f8590df84 = L.circleMarker(
+                [32.025643278221274, -104.20073225834281],
+                {"bubblingMouseEvents": true, "color": "#9467bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9467bd", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_1b781b92e360d35269982a53420e9f86 = L.popup({"maxWidth": 300});
+
+        
+            var html_166717a7e67bc04e779f7f76fd7e7fd3 = $(`<div id="html_166717a7e67bc04e779f7f76fd7e7fd3" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> ANGELS ENVY 21 FEDERAL #219H<br>     <b>Company:</b> CHEVRON U S A INC<br>     <b>Distance to Midland:</b> 124.6 mi<br>     <b>Distance to Carlsbad:</b> 27.3 mi     </div>`)[0];
+            popup_1b781b92e360d35269982a53420e9f86.setContent(html_166717a7e67bc04e779f7f76fd7e7fd3);
+        
+
+        circle_marker_57c856113bee42c55fa2b42f8590df84.bindPopup(popup_1b781b92e360d35269982a53420e9f86)
+        ;
+
+        
+    
+    
+            var circle_marker_e87fe19f3eda9e8cc18530da27ba9a00 = L.circleMarker(
+                [32.05232228321504, -104.18993725752007],
+                {"bubblingMouseEvents": true, "color": "#9467bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9467bd", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_888409a9496682cf2bb9bc3aa315792e = L.popup({"maxWidth": 300});
+
+        
+            var html_7b9ff973957a13cfaa15f21743e6268a = $(`<div id="html_7b9ff973957a13cfaa15f21743e6268a" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> FOUR ROSES 9 FEDERAL #215H<br>     <b>Company:</b> CHEVRON U S A INC<br>     <b>Distance to Midland:</b> 124.0 mi<br>     <b>Distance to Carlsbad:</b> 25.5 mi     </div>`)[0];
+            popup_888409a9496682cf2bb9bc3aa315792e.setContent(html_7b9ff973957a13cfaa15f21743e6268a);
+        
+
+        circle_marker_e87fe19f3eda9e8cc18530da27ba9a00.bindPopup(popup_888409a9496682cf2bb9bc3aa315792e)
+        ;
+
+        
+    
+    
+            var circle_marker_8bb760680631a1db2371b1fbd714328d = L.circleMarker(
+                [32.05087428246324, -104.2013942600295],
+                {"bubblingMouseEvents": true, "color": "#9467bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9467bd", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_570e38aa2d59d0b227db30581d62075f = L.popup({"maxWidth": 300});
+
+        
+            var html_f3d063a84feb6d7fa679ebcc5cc0dcf1 = $(`<div id="html_f3d063a84feb6d7fa679ebcc5cc0dcf1" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> WHISTLE PIG 9 FEDERAL #211H<br>     <b>Company:</b> CHEVRON U S A INC<br>     <b>Distance to Midland:</b> 124.7 mi<br>     <b>Distance to Carlsbad:</b> 25.5 mi     </div>`)[0];
+            popup_570e38aa2d59d0b227db30581d62075f.setContent(html_f3d063a84feb6d7fa679ebcc5cc0dcf1);
+        
+
+        circle_marker_8bb760680631a1db2371b1fbd714328d.bindPopup(popup_570e38aa2d59d0b227db30581d62075f)
+        ;
+
+        
+    
+    
+            var circle_marker_b1af090f932459a77d668bfd057b1815 = L.circleMarker(
+                [32.05087428246611, -104.2013292600148],
+                {"bubblingMouseEvents": true, "color": "#9467bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9467bd", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_699cecd97c841f74ea7b86b0f3aa1f0f = L.popup({"maxWidth": 300});
+
+        
+            var html_b98986a28f11db56822bb1f5a96c4786 = $(`<div id="html_b98986a28f11db56822bb1f5a96c4786" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> WHISTLE PIG 9 FEDERAL #212H<br>     <b>Company:</b> CHEVRON U S A INC<br>     <b>Distance to Midland:</b> 124.7 mi<br>     <b>Distance to Carlsbad:</b> 25.5 mi     </div>`)[0];
+            popup_699cecd97c841f74ea7b86b0f3aa1f0f.setContent(html_b98986a28f11db56822bb1f5a96c4786);
+        
+
+        circle_marker_b1af090f932459a77d668bfd057b1815.bindPopup(popup_699cecd97c841f74ea7b86b0f3aa1f0f)
+        ;
+
+        
+    
+    
+            var circle_marker_7794e7dd8458116f9cf915066548356d = L.circleMarker(
+                [32.05087428246895, -104.20126526000028],
+                {"bubblingMouseEvents": true, "color": "#9467bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9467bd", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_f95d676f46ff5e063938c8ce6db6030d = L.popup({"maxWidth": 300});
+
+        
+            var html_289e71e130b8b79fa08138569bddc302 = $(`<div id="html_289e71e130b8b79fa08138569bddc302" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> WHISTLE PIG 9 FEDERAL #213H<br>     <b>Company:</b> CHEVRON U S A INC<br>     <b>Distance to Midland:</b> 124.7 mi<br>     <b>Distance to Carlsbad:</b> 25.5 mi     </div>`)[0];
+            popup_f95d676f46ff5e063938c8ce6db6030d.setContent(html_289e71e130b8b79fa08138569bddc302);
+        
+
+        circle_marker_7794e7dd8458116f9cf915066548356d.bindPopup(popup_f95d676f46ff5e063938c8ce6db6030d)
+        ;
+
+        
+    
+    
+            var circle_marker_431e0c5ffdb973ee757022ed4a3982f9 = L.circleMarker(
+                [32.05229728311523, -104.19209825800857],
+                {"bubblingMouseEvents": true, "color": "#9467bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9467bd", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_1dd5d42dc6b1012c2afb70c7910ee143 = L.popup({"maxWidth": 300});
+
+        
+            var html_89ccf814a03ccf9ef9dd517b927d2ba2 = $(`<div id="html_89ccf814a03ccf9ef9dd517b927d2ba2" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> FOUR ROSES 9 FEDERAL #214H<br>     <b>Company:</b> CHEVRON U S A INC<br>     <b>Distance to Midland:</b> 124.2 mi<br>     <b>Distance to Carlsbad:</b> 25.5 mi     </div>`)[0];
+            popup_1dd5d42dc6b1012c2afb70c7910ee143.setContent(html_89ccf814a03ccf9ef9dd517b927d2ba2);
+        
+
+        circle_marker_431e0c5ffdb973ee757022ed4a3982f9.bindPopup(popup_1dd5d42dc6b1012c2afb70c7910ee143)
+        ;
+
+        
+    
+    
+            var circle_marker_1533b5402903de6aa7ef1caffec9b932 = L.circleMarker(
+                [32.594245403561466, -103.55483014646258],
+                {"bubblingMouseEvents": true, "color": "#8c564b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8c564b", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_31e31b7363cb504e70e04a0c80391c2a = L.popup({"maxWidth": 300});
+
+        
+            var html_99c9bf3fc42822f5cfcb7a1f5892d9bf = $(`<div id="html_99c9bf3fc42822f5cfcb7a1f5892d9bf" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> RIDDLER 10 FEDERAL COM #201H<br>     <b>Company:</b> Permian Resources Operating, LLC<br>     <b>Distance to Midland:</b> 95.7 mi<br>     <b>Distance to Carlsbad:</b> 41.1 mi     </div>`)[0];
+            popup_31e31b7363cb504e70e04a0c80391c2a.setContent(html_99c9bf3fc42822f5cfcb7a1f5892d9bf);
+        
+
+        circle_marker_1533b5402903de6aa7ef1caffec9b932.bindPopup(popup_31e31b7363cb504e70e04a0c80391c2a)
+        ;
+
+        
+    
+    
+            var circle_marker_3e0e60a0af983738a10bc1876abac2f7 = L.circleMarker(
+                [32.608607406352505, -103.54700114558335],
+                {"bubblingMouseEvents": true, "color": "#8c564b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8c564b", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_c773ebb47dcc87cb19642155814335ba = L.popup({"maxWidth": 300});
+
+        
+            var html_f8edc2214c038bcf2dbfc5a685e105fd = $(`<div id="html_f8edc2214c038bcf2dbfc5a685e105fd" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> RIDDLER 3 10 FEDERAL COM #113H<br>     <b>Company:</b> Permian Resources Operating, LLC<br>     <b>Distance to Midland:</b> 95.7 mi<br>     <b>Distance to Carlsbad:</b> 41.9 mi     </div>`)[0];
+            popup_c773ebb47dcc87cb19642155814335ba.setContent(html_f8edc2214c038bcf2dbfc5a685e105fd);
+        
+
+        circle_marker_3e0e60a0af983738a10bc1876abac2f7.bindPopup(popup_c773ebb47dcc87cb19642155814335ba)
+        ;
+
+        
+    
+    
+            var circle_marker_4ae10bb5f93083c15cc9bff78b309574 = L.circleMarker(
+                [32.60860840656356, -103.54239614452644],
+                {"bubblingMouseEvents": true, "color": "#8c564b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8c564b", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_9bc352ac04c1ae88adf96810bcb43fbe = L.popup({"maxWidth": 300});
+
+        
+            var html_ff2e7b0d9b8161f09f42d18165c988d3 = $(`<div id="html_ff2e7b0d9b8161f09f42d18165c988d3" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> RIDDLER 3 10 FEDERAL COM #127H<br>     <b>Company:</b> Permian Resources Operating, LLC<br>     <b>Distance to Midland:</b> 95.5 mi<br>     <b>Distance to Carlsbad:</b> 42.1 mi     </div>`)[0];
+            popup_9bc352ac04c1ae88adf96810bcb43fbe.setContent(html_ff2e7b0d9b8161f09f42d18165c988d3);
+        
+
+        circle_marker_4ae10bb5f93083c15cc9bff78b309574.bindPopup(popup_9bc352ac04c1ae88adf96810bcb43fbe)
+        ;
+
+        
+    
+    
+            var circle_marker_37466d930602cb1c58aa7c4e8d97bded = L.circleMarker(
+                [32.60860840656846, -103.5422891445019],
+                {"bubblingMouseEvents": true, "color": "#8c564b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8c564b", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_416ccc6dd087570768419e0e2961ae6d = L.popup({"maxWidth": 300});
+
+        
+            var html_c5853d523fc0129c3829b4c986b356e1 = $(`<div id="html_c5853d523fc0129c3829b4c986b356e1" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> RIDDLER 3 10 FEDERAL COM #128H<br>     <b>Company:</b> Permian Resources Operating, LLC<br>     <b>Distance to Midland:</b> 95.5 mi<br>     <b>Distance to Carlsbad:</b> 42.1 mi     </div>`)[0];
+            popup_416ccc6dd087570768419e0e2961ae6d.setContent(html_c5853d523fc0129c3829b4c986b356e1);
+        
+
+        circle_marker_37466d930602cb1c58aa7c4e8d97bded.bindPopup(popup_416ccc6dd087570768419e0e2961ae6d)
+        ;
+
+        
+    
+    
+            var circle_marker_35b5939301c0438bfd10fd458bd8586f = L.circleMarker(
+                [32.53620039893632, -103.44034311647364],
+                {"bubblingMouseEvents": true, "color": "#c49c94", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c49c94", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_10a971dd07ec5248976b3e0d4c994143 = L.popup({"maxWidth": 300});
+
+        
+            var html_f6d8a5a6606ff858ce298ef124b5ddda = $(`<div id="html_f6d8a5a6606ff858ce298ef124b5ddda" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> LOOKIN GOOD 34 STATE COM #501H<br>     <b>Company:</b> MARSHALL & WINSTON INC<br>     <b>Distance to Midland:</b> 88.0 mi<br>     <b>Distance to Carlsbad:</b> 46.7 mi     </div>`)[0];
+            popup_10a971dd07ec5248976b3e0d4c994143.setContent(html_f6d8a5a6606ff858ce298ef124b5ddda);
+        
+
+        circle_marker_35b5939301c0438bfd10fd458bd8586f.bindPopup(popup_10a971dd07ec5248976b3e0d4c994143)
+        ;
+
+        
+    
+    
+            var circle_marker_1a9cc74323f2371c55df6ff7bf641d57 = L.circleMarker(
+                [32.53774439088089, -103.62291915847881],
+                {"bubblingMouseEvents": true, "color": "#8c564b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8c564b", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_55ea1c5187d2f14a3a50040c75f33edf = L.popup({"maxWidth": 300});
+
+        
+            var html_7b33e42181e82c08cff5457edc51deca = $(`<div id="html_7b33e42181e82c08cff5457edc51deca" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> EILEEN 25 FEDERAL COM #502H<br>     <b>Company:</b> Permian Resources Operating, LLC<br>     <b>Distance to Midland:</b> 97.8 mi<br>     <b>Distance to Carlsbad:</b> 36.3 mi     </div>`)[0];
+            popup_55ea1c5187d2f14a3a50040c75f33edf.setContent(html_7b33e42181e82c08cff5457edc51deca);
+        
+
+        circle_marker_1a9cc74323f2371c55df6ff7bf641d57.bindPopup(popup_55ea1c5187d2f14a3a50040c75f33edf)
+        ;
+
+        
+    
+    
+            var circle_marker_f2928daede9ee0c9d4f0868a59fe960c = L.circleMarker(
+                [32.53620039894074, -103.4402461164513],
+                {"bubblingMouseEvents": true, "color": "#c49c94", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c49c94", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_b2141df240109a2f46b4be7b971c253a = L.popup({"maxWidth": 300});
+
+        
+            var html_2feb10b058f085ecda53f72f6aacf8f5 = $(`<div id="html_2feb10b058f085ecda53f72f6aacf8f5" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> LOOKIN GOOD 34 STATE COM #502H<br>     <b>Company:</b> MARSHALL & WINSTON INC<br>     <b>Distance to Midland:</b> 88.0 mi<br>     <b>Distance to Carlsbad:</b> 46.7 mi     </div>`)[0];
+            popup_b2141df240109a2f46b4be7b971c253a.setContent(html_2feb10b058f085ecda53f72f6aacf8f5);
+        
+
+        circle_marker_f2928daede9ee0c9d4f0868a59fe960c.bindPopup(popup_b2141df240109a2f46b4be7b971c253a)
+        ;
+
+        
+    
+    
+            var circle_marker_f76342dfe95d71b81a01c57f6f8b37b0 = L.circleMarker(
+                [32.38302336120171, -103.69893516612217],
+                {"bubblingMouseEvents": true, "color": "#aec7e8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#aec7e8", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_70a9aded66d505314258d8dd5ba6eaa7 = L.popup({"maxWidth": 300});
+
+        
+            var html_d875c24b2e8138188592755210b60cd8 = $(`<div id="html_d875c24b2e8138188592755210b60cd8" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> PRETTY GOOD 20 FEDERAL COM #303H<br>     <b>Company:</b> EOG RESOURCES INC<br>     <b>Distance to Midland:</b> 98.6 mi<br>     <b>Distance to Carlsbad:</b> 31.1 mi     </div>`)[0];
+            popup_70a9aded66d505314258d8dd5ba6eaa7.setContent(html_d875c24b2e8138188592755210b60cd8);
+        
+
+        circle_marker_f76342dfe95d71b81a01c57f6f8b37b0.bindPopup(popup_70a9aded66d505314258d8dd5ba6eaa7)
+        ;
+
+        
+    
+    
+            var circle_marker_ae98a71c248efd10581354b25a095757 = L.circleMarker(
+                [32.88497446151526, -103.36493212159837],
+                {"bubblingMouseEvents": true, "color": "#e377c2", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e377c2", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_c7f77889ac437b64c73e7df3bc943d68 = L.popup({"maxWidth": 300});
+
+        
+            var html_a840173236c691bd4ef54301431853ac = $(`<div id="html_a840173236c691bd4ef54301431853ac" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> CAPITAN 22301 33 4 STATE COM #023H<br>     <b>Company:</b> BTA OIL PRODUCERS, LLC<br>     <b>Distance to Midland:</b> 96.9 mi<br>     <b>Distance to Carlsbad:</b> 59.7 mi     </div>`)[0];
+            popup_c7f77889ac437b64c73e7df3bc943d68.setContent(html_a840173236c691bd4ef54301431853ac);
+        
+
+        circle_marker_ae98a71c248efd10581354b25a095757.bindPopup(popup_c7f77889ac437b64c73e7df3bc943d68)
+        ;
+
+        
+    
+    
+            var circle_marker_4260438fc63ec86c282b55a8db413b9d = L.circleMarker(
+                [32.09900771290467, -103.6979013483264],
+                {"bubblingMouseEvents": true, "color": "#aec7e8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#aec7e8", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_42a668684d42897bf942c30c5c1dad00 = L.popup({"maxWidth": 300});
+
+        
+            var html_cf83507c7d600e599021503169407989 = $(`<div id="html_cf83507c7d600e599021503169407989" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> JEFE 29 FEDERAL COM #208H<br>     <b>Company:</b> EOG RESOURCES INC<br>     <b>Distance to Midland:</b> 95.3 mi<br>     <b>Distance to Carlsbad:</b> 38.2 mi     </div>`)[0];
+            popup_42a668684d42897bf942c30c5c1dad00.setContent(html_cf83507c7d600e599021503169407989);
+        
+
+        circle_marker_4260438fc63ec86c282b55a8db413b9d.bindPopup(popup_42a668684d42897bf942c30c5c1dad00)
+        ;
+
+        
+    
+    
+            var circle_marker_f69a798280024d2fd7cfd26f8bf9d46a = L.circleMarker(
+                [32.40023137317306, -103.49839612123832],
+                {"bubblingMouseEvents": true, "color": "#98df8a", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#98df8a", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_4e4f1f438cc072e7fa540edc0b5580f2 = L.popup({"maxWidth": 300});
+
+        
+            var html_f3bc97a623ac9fe2465a4c6d8b8e7833 = $(`<div id="html_f3bc97a623ac9fe2465a4c6d8b8e7833" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> WEST GRAMA RIDGE 8 5 FEDERAL COM #354H<br>     <b>Company:</b> Coterra Energy Operating Co.<br>     <b>Distance to Midland:</b> 87.7 mi<br>     <b>Distance to Carlsbad:</b> 42.7 mi     </div>`)[0];
+            popup_4e4f1f438cc072e7fa540edc0b5580f2.setContent(html_f3bc97a623ac9fe2465a4c6d8b8e7833);
+        
+
+        circle_marker_f69a798280024d2fd7cfd26f8bf9d46a.bindPopup(popup_4e4f1f438cc072e7fa540edc0b5580f2)
+        ;
+
+        
+    
+    
+            var circle_marker_ac63e8b605842792520ccfcbb09ddeb4 = L.circleMarker(
+                [32.757282838383546, -103.39801292090303],
+                {"bubblingMouseEvents": true, "color": "#7f7f7f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7f7f7f", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_af86862d88115afd35c475e0207795fb = L.popup({"maxWidth": 300});
+
+        
+            var html_e95b3eda1f3daef8d94d07db4784a3b4 = $(`<div id="html_e95b3eda1f3daef8d94d07db4784a3b4" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> TXS BIG DOG STATE COM #102H<br>     <b>Company:</b> Texas Standard Operating NM LLC<br>     <b>Distance to Midland:</b> 93.3 mi<br>     <b>Distance to Carlsbad:</b> 53.7 mi     </div>`)[0];
+            popup_af86862d88115afd35c475e0207795fb.setContent(html_e95b3eda1f3daef8d94d07db4784a3b4);
+        
+
+        circle_marker_ac63e8b605842792520ccfcbb09ddeb4.bindPopup(popup_af86862d88115afd35c475e0207795fb)
+        ;
+
+        
+    
+    
+            var circle_marker_00b549896959afdb4eb52cc3dd24f33a = L.circleMarker(
+                [32.10801730604122, -103.88773819221545],
+                {"bubblingMouseEvents": true, "color": "#c7c7c7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c7c7c7", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_9a39b28532db025591107ccd6a1bacdf = L.popup({"maxWidth": 300});
+
+        
+            var html_4c22b9854efb8bc837c991e1866bc846 = $(`<div id="html_4c22b9854efb8bc837c991e1866bc846" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> POKER LAKE UNIT 21 BD #502H<br>     <b>Company:</b> XTO PERMIAN OPERATING LLC.<br>     <b>Distance to Midland:</b> 106.5 mi<br>     <b>Distance to Carlsbad:</b> 29.4 mi     </div>`)[0];
+            popup_9a39b28532db025591107ccd6a1bacdf.setContent(html_4c22b9854efb8bc837c991e1866bc846);
+        
+
+        circle_marker_00b549896959afdb4eb52cc3dd24f33a.bindPopup(popup_9a39b28532db025591107ccd6a1bacdf)
+        ;
+
+        
+    
+    
+            var circle_marker_6973fd8218bd977fd4c646e23647e7f9 = L.circleMarker(
+                [32.108865816259815, -103.88606019188488],
+                {"bubblingMouseEvents": true, "color": "#c7c7c7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c7c7c7", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_304b40fcff8204ddd5a4ee8b8fcdc005 = L.popup({"maxWidth": 300});
+
+        
+            var html_b39a8b2c49461c86e6df9e4c4d449589 = $(`<div id="html_b39a8b2c49461c86e6df9e4c4d449589" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> POKER LAKE UNIT 21 BD #507H<br>     <b>Company:</b> XTO PERMIAN OPERATING LLC.<br>     <b>Distance to Midland:</b> 106.4 mi<br>     <b>Distance to Carlsbad:</b> 29.4 mi     </div>`)[0];
+            popup_304b40fcff8204ddd5a4ee8b8fcdc005.setContent(html_b39a8b2c49461c86e6df9e4c4d449589);
+        
+
+        circle_marker_6973fd8218bd977fd4c646e23647e7f9.bindPopup(popup_304b40fcff8204ddd5a4ee8b8fcdc005)
+        ;
+
+        
+    
+    
+            var circle_marker_2ba898033227cfe13deed7e82e826b60 = L.circleMarker(
+                [32.62783339241283, -103.92128323245811],
+                {"bubblingMouseEvents": true, "color": "#8c564b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8c564b", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_bcc32803d46b0b0498690f12fb935899 = L.popup({"maxWidth": 300});
+
+        
+            var html_73909b8c8da4010f9b18dafb6a01e5d4 = $(`<div id="html_73909b8c8da4010f9b18dafb6a01e5d4" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> ACE 25 30 FEDERAL #133H<br>     <b>Company:</b> Permian Resources Operating, LLC<br>     <b>Distance to Midland:</b> 116.3 mi<br>     <b>Distance to Carlsbad:</b> 22.9 mi     </div>`)[0];
+            popup_bcc32803d46b0b0498690f12fb935899.setContent(html_73909b8c8da4010f9b18dafb6a01e5d4);
+        
+
+        circle_marker_2ba898033227cfe13deed7e82e826b60.bindPopup(popup_bcc32803d46b0b0498690f12fb935899)
+        ;
+
+        
+    
+    
+            var circle_marker_c1badc61486a4a4e1ffe4a3f2865e638 = L.circleMarker(
+                [32.62774939240059, -103.92124223244336],
+                {"bubblingMouseEvents": true, "color": "#8c564b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8c564b", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_8f102b882ab46a510a236f1f2f3309ad = L.popup({"maxWidth": 300});
+
+        
+            var html_3028cff8c325c78bc6862745454cc33a = $(`<div id="html_3028cff8c325c78bc6862745454cc33a" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> ACE 25 30 FEDERAL #134H<br>     <b>Company:</b> Permian Resources Operating, LLC<br>     <b>Distance to Midland:</b> 116.3 mi<br>     <b>Distance to Carlsbad:</b> 22.9 mi     </div>`)[0];
+            popup_8f102b882ab46a510a236f1f2f3309ad.setContent(html_3028cff8c325c78bc6862745454cc33a);
+        
+
+        circle_marker_c1badc61486a4a4e1ffe4a3f2865e638.bindPopup(popup_8f102b882ab46a510a236f1f2f3309ad)
+        ;
+
+        
+    
+    
+            var circle_marker_e1d874fca9a883b06483adb49541f1df = L.circleMarker(
+                [32.62761239235961, -103.92163223252348],
+                {"bubblingMouseEvents": true, "color": "#8c564b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8c564b", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_a9c93dfc7dad2cce137240544845b2bf = L.popup({"maxWidth": 300});
+
+        
+            var html_a792fda229afcbfcf66997a96e4917be = $(`<div id="html_a792fda229afcbfcf66997a96e4917be" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> MORBUCKS 25 26 FEDERAL #114H<br>     <b>Company:</b> Permian Resources Operating, LLC<br>     <b>Distance to Midland:</b> 116.3 mi<br>     <b>Distance to Carlsbad:</b> 22.9 mi     </div>`)[0];
+            popup_a9c93dfc7dad2cce137240544845b2bf.setContent(html_a792fda229afcbfcf66997a96e4917be);
+        
+
+        circle_marker_e1d874fca9a883b06483adb49541f1df.bindPopup(popup_a9c93dfc7dad2cce137240544845b2bf)
+        ;
+
+        
+    
+    
+            var circle_marker_9de29e33fbc1a54c2b75151babd41e4c = L.circleMarker(
+                [32.62752839234743, -103.92159123250879],
+                {"bubblingMouseEvents": true, "color": "#8c564b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8c564b", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_b1cff2b100d513bd6b3e6d997711a8f4 = L.popup({"maxWidth": 300});
+
+        
+            var html_c2a4111cc180365c797c86ad4114ca1b = $(`<div id="html_c2a4111cc180365c797c86ad4114ca1b" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> MORBUCKS 25 26 FEDERAL #123H<br>     <b>Company:</b> Permian Resources Operating, LLC<br>     <b>Distance to Midland:</b> 116.3 mi<br>     <b>Distance to Carlsbad:</b> 22.9 mi     </div>`)[0];
+            popup_b1cff2b100d513bd6b3e6d997711a8f4.setContent(html_c2a4111cc180365c797c86ad4114ca1b);
+        
+
+        circle_marker_9de29e33fbc1a54c2b75151babd41e4c.bindPopup(popup_b1cff2b100d513bd6b3e6d997711a8f4)
+        ;
+
+        
+    
+    
+            var circle_marker_d670e9ccef348f6b4f0b517fa6daa17c = L.circleMarker(
+                [32.63491939443861, -103.9031502287766],
+                {"bubblingMouseEvents": true, "color": "#8c564b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8c564b", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_d41f9454be4403dc3cccbd306662582a = L.popup({"maxWidth": 300});
+
+        
+            var html_cd0fd6ba68b5e1dfcf4957ce22c19780 = $(`<div id="html_cd0fd6ba68b5e1dfcf4957ce22c19780" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> MOJO 30 25 FEDERAL #111H<br>     <b>Company:</b> Permian Resources Operating, LLC<br>     <b>Distance to Midland:</b> 115.5 mi<br>     <b>Distance to Carlsbad:</b> 24.1 mi     </div>`)[0];
+            popup_d41f9454be4403dc3cccbd306662582a.setContent(html_cd0fd6ba68b5e1dfcf4957ce22c19780);
+        
+
+        circle_marker_d670e9ccef348f6b4f0b517fa6daa17c.bindPopup(popup_d41f9454be4403dc3cccbd306662582a)
+        ;
+
+        
+    
+    
+            var circle_marker_a189fb9abe3b311f60e9e4100267ef78 = L.circleMarker(
+                [32.634918394443375, -103.9030432287521],
+                {"bubblingMouseEvents": true, "color": "#8c564b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8c564b", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_e4b98c89cc14aba65cc3538fe4ffa958 = L.popup({"maxWidth": 300});
+
+        
+            var html_07c04db2484406341b8c4308e565b3b4 = $(`<div id="html_07c04db2484406341b8c4308e565b3b4" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> MOJO 30 25 FEDERAL #112H<br>     <b>Company:</b> Permian Resources Operating, LLC<br>     <b>Distance to Midland:</b> 115.5 mi<br>     <b>Distance to Carlsbad:</b> 24.1 mi     </div>`)[0];
+            popup_e4b98c89cc14aba65cc3538fe4ffa958.setContent(html_07c04db2484406341b8c4308e565b3b4);
+        
+
+        circle_marker_a189fb9abe3b311f60e9e4100267ef78.bindPopup(popup_e4b98c89cc14aba65cc3538fe4ffa958)
+        ;
+
+        
+    
+    
+            var circle_marker_e8a11dc1ac100e29e79069d91da43fe9 = L.circleMarker(
+                [32.634918394448285, -103.90293622872767],
+                {"bubblingMouseEvents": true, "color": "#8c564b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8c564b", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_1b3be3099cc4a054431643337c8885e3 = L.popup({"maxWidth": 300});
+
+        
+            var html_f11032655b2368a15aa2676c44a90f4b = $(`<div id="html_f11032655b2368a15aa2676c44a90f4b" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> MOJO 30 25 FEDERAL #121H<br>     <b>Company:</b> Permian Resources Operating, LLC<br>     <b>Distance to Midland:</b> 115.5 mi<br>     <b>Distance to Carlsbad:</b> 24.1 mi     </div>`)[0];
+            popup_1b3be3099cc4a054431643337c8885e3.setContent(html_f11032655b2368a15aa2676c44a90f4b);
+        
+
+        circle_marker_e8a11dc1ac100e29e79069d91da43fe9.bindPopup(popup_1b3be3099cc4a054431643337c8885e3)
+        ;
+
+        
+    
+    
+            var circle_marker_a4d3acc9ae491102c0834aee75d7ab60 = L.circleMarker(
+                [32.01370231151799, -103.39706707420359],
+                {"bubblingMouseEvents": true, "color": "#8c564b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8c564b", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_d13a4b7266f5675f06b298fae9c8beac = L.popup({"maxWidth": 300});
+
+        
+            var html_9ac016b48899df3274ad0937ccd80a3b = $(`<div id="html_9ac016b48899df3274ad0937ccd80a3b" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> EL CAMPEON FEDERAL COM #111H<br>     <b>Company:</b> Permian Resources Operating, LLC<br>     <b>Distance to Midland:</b> 77.5 mi<br>     <b>Distance to Carlsbad:</b> 56.2 mi     </div>`)[0];
+            popup_d13a4b7266f5675f06b298fae9c8beac.setContent(html_9ac016b48899df3274ad0937ccd80a3b);
+        
+
+        circle_marker_a4d3acc9ae491102c0834aee75d7ab60.bindPopup(popup_d13a4b7266f5675f06b298fae9c8beac)
+        ;
+
+        
+    
+    
+            var circle_marker_babd36f2a7dc5a9813d5e705b9649f31 = L.circleMarker(
+                [32.022425313633654, -103.38302507150364],
+                {"bubblingMouseEvents": true, "color": "#8c564b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8c564b", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_9c6c273b2aa395c9f6c40e4119d22f6f = L.popup({"maxWidth": 300});
+
+        
+            var html_40656a766e4f20555d4b962b5d79aa21 = $(`<div id="html_40656a766e4f20555d4b962b5d79aa21" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> EL CAMPEON FEDERAL COM #114H<br>     <b>Company:</b> Permian Resources Operating, LLC<br>     <b>Distance to Midland:</b> 76.6 mi<br>     <b>Distance to Carlsbad:</b> 56.6 mi     </div>`)[0];
+            popup_9c6c273b2aa395c9f6c40e4119d22f6f.setContent(html_40656a766e4f20555d4b962b5d79aa21);
+        
+
+        circle_marker_babd36f2a7dc5a9813d5e705b9649f31.bindPopup(popup_9c6c273b2aa395c9f6c40e4119d22f6f)
+        ;
+
+        
+    
+    
+            var circle_marker_f99a7ab9ffb681a7ba7e0a0f749af098 = L.circleMarker(
+                [32.022498313285034, -103.39127007340254],
+                {"bubblingMouseEvents": true, "color": "#8c564b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8c564b", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_a2c178cf290cc46d693e211c3e5db724 = L.popup({"maxWidth": 300});
+
+        
+            var html_a4594fdc7ab439539ba12f7e2db74b27 = $(`<div id="html_a4594fdc7ab439539ba12f7e2db74b27" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> EL CAMPEON FEDERAL COM #122H<br>     <b>Company:</b> Permian Resources Operating, LLC<br>     <b>Distance to Midland:</b> 77.1 mi<br>     <b>Distance to Carlsbad:</b> 56.2 mi     </div>`)[0];
+            popup_a2c178cf290cc46d693e211c3e5db724.setContent(html_a4594fdc7ab439539ba12f7e2db74b27);
+        
+
+        circle_marker_f99a7ab9ffb681a7ba7e0a0f749af098.bindPopup(popup_a2c178cf290cc46d693e211c3e5db724)
+        ;
+
+        
+    
+    
+            var circle_marker_db4aa9577596bd262d4a6603c9867b54 = L.circleMarker(
+                [32.022425313629014, -103.38313107152796],
+                {"bubblingMouseEvents": true, "color": "#8c564b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8c564b", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_4496b48e7596a2de4af565f39b6aa74f = L.popup({"maxWidth": 300});
+
+        
+            var html_13c3d58fea3da2e81cd9839684d15188 = $(`<div id="html_13c3d58fea3da2e81cd9839684d15188" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> EL CAMPEON FEDERAL COM #124H<br>     <b>Company:</b> Permian Resources Operating, LLC<br>     <b>Distance to Midland:</b> 76.6 mi<br>     <b>Distance to Carlsbad:</b> 56.6 mi     </div>`)[0];
+            popup_4496b48e7596a2de4af565f39b6aa74f.setContent(html_13c3d58fea3da2e81cd9839684d15188);
+        
+
+        circle_marker_db4aa9577596bd262d4a6603c9867b54.bindPopup(popup_4496b48e7596a2de4af565f39b6aa74f)
+        ;
+
+        
+    
+    
+            var circle_marker_b19d8f2f7557e3eb409664f0b484e0ba = L.circleMarker(
+                [32.0138843115493, -103.39706707421458],
+                {"bubblingMouseEvents": true, "color": "#8c564b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8c564b", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_37303eb96535debd15f5a44b65260cd2 = L.popup({"maxWidth": 300});
+
+        
+            var html_704c5a8a69d665073ab1a4047211af5f = $(`<div id="html_704c5a8a69d665073ab1a4047211af5f" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> EL CAMPEON FEDERAL COM #151H<br>     <b>Company:</b> Permian Resources Operating, LLC<br>     <b>Distance to Midland:</b> 77.5 mi<br>     <b>Distance to Carlsbad:</b> 56.2 mi     </div>`)[0];
+            popup_37303eb96535debd15f5a44b65260cd2.setContent(html_704c5a8a69d665073ab1a4047211af5f);
+        
+
+        circle_marker_b19d8f2f7557e3eb409664f0b484e0ba.bindPopup(popup_37303eb96535debd15f5a44b65260cd2)
+        ;
+
+        
+    
+    
+            var circle_marker_c26eb70a6e21c3a964eeaa086aa7812e = L.circleMarker(
+                [32.108814305162866, -103.91062319747962],
+                {"bubblingMouseEvents": true, "color": "#c7c7c7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c7c7c7", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_fb9d87acf0aec7dead6cbe3aa4b0003a = L.popup({"maxWidth": 300});
+
+        
+            var html_f75826ba1a710184e1de3a0a49ff934c = $(`<div id="html_f75826ba1a710184e1de3a0a49ff934c" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> POKER LAKE UNIT 20 BD #116H<br>     <b>Company:</b> XTO PERMIAN OPERATING LLC.<br>     <b>Distance to Midland:</b> 107.8 mi<br>     <b>Distance to Carlsbad:</b> 28.4 mi     </div>`)[0];
+            popup_fb9d87acf0aec7dead6cbe3aa4b0003a.setContent(html_f75826ba1a710184e1de3a0a49ff934c);
+        
+
+        circle_marker_c26eb70a6e21c3a964eeaa086aa7812e.bindPopup(popup_fb9d87acf0aec7dead6cbe3aa4b0003a)
+        ;
+
+        
+    
+    
+            var circle_marker_fa31a12049e9cbd99ec9322d1831f41a = L.circleMarker(
+                [32.10881530516733, -103.91052619745756],
+                {"bubblingMouseEvents": true, "color": "#c7c7c7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c7c7c7", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_374681335dc940498c2f0e121399736d = L.popup({"maxWidth": 300});
+
+        
+            var html_5b244db59f1c8a111fbf8a0be84641cb = $(`<div id="html_5b244db59f1c8a111fbf8a0be84641cb" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> POKER LAKE UNIT 20 BD #117H<br>     <b>Company:</b> XTO PERMIAN OPERATING LLC.<br>     <b>Distance to Midland:</b> 107.8 mi<br>     <b>Distance to Carlsbad:</b> 28.4 mi     </div>`)[0];
+            popup_374681335dc940498c2f0e121399736d.setContent(html_5b244db59f1c8a111fbf8a0be84641cb);
+        
+
+        circle_marker_fa31a12049e9cbd99ec9322d1831f41a.bindPopup(popup_374681335dc940498c2f0e121399736d)
+        ;
+
+        
+    
+    
+            var circle_marker_870322ac44f4606397cc39d7641e5f52 = L.circleMarker(
+                [32.108602305544075, -103.90120619532077],
+                {"bubblingMouseEvents": true, "color": "#c7c7c7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c7c7c7", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_01690fc83ffb883f7a691f367f88527e = L.popup({"maxWidth": 300});
+
+        
+            var html_8a82a8e9aed90a854ce25930506da679 = $(`<div id="html_8a82a8e9aed90a854ce25930506da679" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> POKER LAKE UNIT 20 BD #308H<br>     <b>Company:</b> XTO PERMIAN OPERATING LLC.<br>     <b>Distance to Midland:</b> 107.3 mi<br>     <b>Distance to Carlsbad:</b> 28.8 mi     </div>`)[0];
+            popup_01690fc83ffb883f7a691f367f88527e.setContent(html_8a82a8e9aed90a854ce25930506da679);
+        
+
+        circle_marker_870322ac44f4606397cc39d7641e5f52.bindPopup(popup_01690fc83ffb883f7a691f367f88527e)
+        ;
+
+        
+    
+    
+            var circle_marker_7f2eacb6afd876eccb4aeb1bbd469b7f = L.circleMarker(
+                [32.10860330554853, -103.90110919529873],
+                {"bubblingMouseEvents": true, "color": "#c7c7c7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c7c7c7", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_e4e017a89ee43ede4bd06b9c4649fd99 = L.popup({"maxWidth": 300});
+
+        
+            var html_99ec7ec2858e00346ad059c27f2f9316 = $(`<div id="html_99ec7ec2858e00346ad059c27f2f9316" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> POKER LAKE UNIT 20 BD #309H<br>     <b>Company:</b> XTO PERMIAN OPERATING LLC.<br>     <b>Distance to Midland:</b> 107.3 mi<br>     <b>Distance to Carlsbad:</b> 28.8 mi     </div>`)[0];
+            popup_e4e017a89ee43ede4bd06b9c4649fd99.setContent(html_99ec7ec2858e00346ad059c27f2f9316);
+        
+
+        circle_marker_7f2eacb6afd876eccb4aeb1bbd469b7f.bindPopup(popup_e4e017a89ee43ede4bd06b9c4649fd99)
+        ;
+
+        
+    
+    
+            var circle_marker_becc54ff82fe02057ae68db422de3953 = L.circleMarker(
+                [32.340187357104654, -103.62832114727836],
+                {"bubblingMouseEvents": true, "color": "#98df8a", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#98df8a", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_fca6215f0fb410f2344bd5d25c37d38d = L.popup({"maxWidth": 300});
+
+        
+            var html_c26835ad4b9dd6624e491d7646d9a714 = $(`<div id="html_c26835ad4b9dd6624e491d7646d9a714" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> CORIANDER 1 12 FEDERAL COM #302H<br>     <b>Company:</b> Coterra Energy Operating Co.<br>     <b>Distance to Midland:</b> 93.9 mi<br>     <b>Distance to Carlsbad:</b> 35.5 mi     </div>`)[0];
+            popup_fca6215f0fb410f2344bd5d25c37d38d.setContent(html_c26835ad4b9dd6624e491d7646d9a714);
+        
+
+        circle_marker_becc54ff82fe02057ae68db422de3953.bindPopup(popup_fca6215f0fb410f2344bd5d25c37d38d)
+        ;
+
+        
+    
+    
+            var circle_marker_9fab7300669c33fc1760d0bae01bc6c6 = L.circleMarker(
+                [32.34018835711067, -103.62819114724861],
+                {"bubblingMouseEvents": true, "color": "#98df8a", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#98df8a", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_a5f7f2d49a0285a37fcb95c86ee592a4 = L.popup({"maxWidth": 300});
+
+        
+            var html_0ed1613697c8e0f46833831e2dc3bae8 = $(`<div id="html_0ed1613697c8e0f46833831e2dc3bae8" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> CORIANDER 1 12 FEDERAL COM #223H<br>     <b>Company:</b> Coterra Energy Operating Co.<br>     <b>Distance to Midland:</b> 93.9 mi<br>     <b>Distance to Carlsbad:</b> 35.6 mi     </div>`)[0];
+            popup_a5f7f2d49a0285a37fcb95c86ee592a4.setContent(html_0ed1613697c8e0f46833831e2dc3bae8);
+        
+
+        circle_marker_9fab7300669c33fc1760d0bae01bc6c6.bindPopup(popup_a5f7f2d49a0285a37fcb95c86ee592a4)
+        ;
+
+        
+    
+    
+            var circle_marker_3d5fb084289950acf25ad5f5bc7966a6 = L.circleMarker(
+                [32.34018835710775, -103.62825614726353],
+                {"bubblingMouseEvents": true, "color": "#98df8a", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#98df8a", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_2b7037d62339f5da62c9729ac1b747d3 = L.popup({"maxWidth": 300});
+
+        
+            var html_fc961dc14ded6cf5c1bb14d219e3f50c = $(`<div id="html_fc961dc14ded6cf5c1bb14d219e3f50c" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> CORIANDER 1 12 FEDERAL COM #153H<br>     <b>Company:</b> Coterra Energy Operating Co.<br>     <b>Distance to Midland:</b> 93.9 mi<br>     <b>Distance to Carlsbad:</b> 35.6 mi     </div>`)[0];
+            popup_2b7037d62339f5da62c9729ac1b747d3.setContent(html_fc961dc14ded6cf5c1bb14d219e3f50c);
+        
+
+        circle_marker_3d5fb084289950acf25ad5f5bc7966a6.bindPopup(popup_2b7037d62339f5da62c9729ac1b747d3)
+        ;
+
+        
+    
+    
+            var circle_marker_b46403882138138d6cb1f864b141a312 = L.circleMarker(
+                [32.34018735710173, -103.62838614729326],
+                {"bubblingMouseEvents": true, "color": "#98df8a", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#98df8a", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_8a9454c286b0b0339a4548715a1d01e4 = L.popup({"maxWidth": 300});
+
+        
+            var html_ef39a0dbf1bb5e6e4f09bde90b291578 = $(`<div id="html_ef39a0dbf1bb5e6e4f09bde90b291578" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> CORIANDER 1 12 FEDERAL COM #212H<br>     <b>Company:</b> Coterra Energy Operating Co.<br>     <b>Distance to Midland:</b> 93.9 mi<br>     <b>Distance to Carlsbad:</b> 35.5 mi     </div>`)[0];
+            popup_8a9454c286b0b0339a4548715a1d01e4.setContent(html_ef39a0dbf1bb5e6e4f09bde90b291578);
+        
+
+        circle_marker_b46403882138138d6cb1f864b141a312.bindPopup(popup_8a9454c286b0b0339a4548715a1d01e4)
+        ;
+
+        
+    
+    
+            var circle_marker_5de5aab6582bcf64ea01ac60d2bff4e7 = L.circleMarker(
+                [32.361623031616034, -104.27345549560624],
+                {"bubblingMouseEvents": true, "color": "#ff7f0e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_7f8f7674cdfd708c0efccd0c1c1807e0 = L.popup({"maxWidth": 300});
+
+        
+            var html_fb2132fe66301021f1b824df8297c5d1 = $(`<div id="html_fb2132fe66301021f1b824df8297c5d1" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> RUNWAY 26 30 FEDERAL COM #523H<br>     <b>Company:</b> MEWBOURNE OIL CO<br>     <b>Distance to Midland:</b> 131.1 mi<br>     <b>Distance to Carlsbad:</b> 4.8 mi     </div>`)[0];
+            popup_7f8f7674cdfd708c0efccd0c1c1807e0.setContent(html_fb2132fe66301021f1b824df8297c5d1);
+        
+
+        circle_marker_5de5aab6582bcf64ea01ac60d2bff4e7.bindPopup(popup_7f8f7674cdfd708c0efccd0c1c1807e0)
+        ;
+
+        
+    
+    
+            var circle_marker_c49a3014dc84cb59ee19a06f9b9db9e2 = L.circleMarker(
+                [32.36106712152564, -104.27339069555663],
+                {"bubblingMouseEvents": true, "color": "#ff7f0e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_101520fbe6ec8fa77465418b0187f6b9 = L.popup({"maxWidth": 300});
+
+        
+            var html_0475ef8c7a1700045255fc13be1a77f4 = $(`<div id="html_0475ef8c7a1700045255fc13be1a77f4" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> RUNWAY 26 30 FEDERAL COM #521H<br>     <b>Company:</b> MEWBOURNE OIL CO<br>     <b>Distance to Midland:</b> 131.1 mi<br>     <b>Distance to Carlsbad:</b> 4.9 mi     </div>`)[0];
+            popup_101520fbe6ec8fa77465418b0187f6b9.setContent(html_0475ef8c7a1700045255fc13be1a77f4);
+        
+
+        circle_marker_c49a3014dc84cb59ee19a06f9b9db9e2.bindPopup(popup_101520fbe6ec8fa77465418b0187f6b9)
+        ;
+
+        
+    
+    
+            var circle_marker_8ea567e65c026a73fada5be3323c53fb = L.circleMarker(
+                [32.361623631622024, -104.27332589557692],
+                {"bubblingMouseEvents": true, "color": "#ff7f0e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_6d84fd8c4d378c0323f532abcd9855df = L.popup({"maxWidth": 300});
+
+        
+            var html_12377c39601c635a4bcbd151b2487df3 = $(`<div id="html_12377c39601c635a4bcbd151b2487df3" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> RUNWAY 26 30 FEDERAL COM #711H<br>     <b>Company:</b> MEWBOURNE OIL CO<br>     <b>Distance to Midland:</b> 131.1 mi<br>     <b>Distance to Carlsbad:</b> 4.8 mi     </div>`)[0];
+            popup_6d84fd8c4d378c0323f532abcd9855df.setContent(html_12377c39601c635a4bcbd151b2487df3);
+        
+
+        circle_marker_8ea567e65c026a73fada5be3323c53fb.bindPopup(popup_6d84fd8c4d378c0323f532abcd9855df)
+        ;
+
+        
+    
+    
+            var circle_marker_d081a5b219d19ec8eb344c7ebafc8cb4 = L.circleMarker(
+                [32.361623931625005, -104.27326119556227],
+                {"bubblingMouseEvents": true, "color": "#ff7f0e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_a481898cd585dd039c208c28bd75f1be = L.popup({"maxWidth": 300});
+
+        
+            var html_376f53e2070d1f58b235848cfef40b2a = $(`<div id="html_376f53e2070d1f58b235848cfef40b2a" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> RUNWAY 26 30 FEDERAL COM #713H<br>     <b>Company:</b> MEWBOURNE OIL CO<br>     <b>Distance to Midland:</b> 131.1 mi<br>     <b>Distance to Carlsbad:</b> 4.8 mi     </div>`)[0];
+            popup_a481898cd585dd039c208c28bd75f1be.setContent(html_376f53e2070d1f58b235848cfef40b2a);
+        
+
+        circle_marker_d081a5b219d19ec8eb344c7ebafc8cb4.bindPopup(popup_a481898cd585dd039c208c28bd75f1be)
+        ;
+
+        
+    
+    
+            var circle_marker_e2a969d788b7225dbac11ef821ebdbb7 = L.circleMarker(
+                [32.340187357098856, -103.6284501473079],
+                {"bubblingMouseEvents": true, "color": "#98df8a", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#98df8a", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_4db6e1b5a318c4fb06daa833dd90374b = L.popup({"maxWidth": 300});
+
+        
+            var html_fb9f16776e0916714b96a2004634bfa7 = $(`<div id="html_fb9f16776e0916714b96a2004634bfa7" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> CORIANDER 1 12 FEDERAL COM #222H<br>     <b>Company:</b> Coterra Energy Operating Co.<br>     <b>Distance to Midland:</b> 93.9 mi<br>     <b>Distance to Carlsbad:</b> 35.5 mi     </div>`)[0];
+            popup_4db6e1b5a318c4fb06daa833dd90374b.setContent(html_fb9f16776e0916714b96a2004634bfa7);
+        
+
+        circle_marker_e2a969d788b7225dbac11ef821ebdbb7.bindPopup(popup_4db6e1b5a318c4fb06daa833dd90374b)
+        ;
+
+        
+    
+    
+            var circle_marker_f812a137a8595e58a68cd49593112c02 = L.circleMarker(
+                [32.340490357439414, -103.62202014585391],
+                {"bubblingMouseEvents": true, "color": "#98df8a", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#98df8a", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_94d4711a649057549bd2f8d17fb5fbfe = L.popup({"maxWidth": 300});
+
+        
+            var html_fa409d08a0892664e37068a73a245c11 = $(`<div id="html_fa409d08a0892664e37068a73a245c11" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> CORIANDER 1 12 STATE COM #154H<br>     <b>Company:</b> Coterra Energy Operating Co.<br>     <b>Distance to Midland:</b> 93.5 mi<br>     <b>Distance to Carlsbad:</b> 35.9 mi     </div>`)[0];
+            popup_94d4711a649057549bd2f8d17fb5fbfe.setContent(html_fa409d08a0892664e37068a73a245c11);
+        
+
+        circle_marker_f812a137a8595e58a68cd49593112c02.bindPopup(popup_94d4711a649057549bd2f8d17fb5fbfe)
+        ;
+
+        
+    
+    
+            var circle_marker_a77e755252a1c44742af93b54e034979 = L.circleMarker(
+                [32.10801830604563, -103.88764219219364],
+                {"bubblingMouseEvents": true, "color": "#c7c7c7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c7c7c7", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_cf36bc142dca38ef9b4879e9ae4aee66 = L.popup({"maxWidth": 300});
+
+        
+            var html_66d41a9bef2571335c837141c54ec182 = $(`<div id="html_66d41a9bef2571335c837141c54ec182" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> POKER LAKE UNIT 21 BD #503H<br>     <b>Company:</b> XTO PERMIAN OPERATING LLC.<br>     <b>Distance to Midland:</b> 106.5 mi<br>     <b>Distance to Carlsbad:</b> 29.4 mi     </div>`)[0];
+            popup_cf36bc142dca38ef9b4879e9ae4aee66.setContent(html_66d41a9bef2571335c837141c54ec182);
+        
+
+        circle_marker_a77e755252a1c44742af93b54e034979.bindPopup(popup_cf36bc142dca38ef9b4879e9ae4aee66)
+        ;
+
+        
+    
+    
+            var circle_marker_357e7a3b271cef596631501ecb71908f = L.circleMarker(
+                [32.52092308605558, -103.66628816734637],
+                {"bubblingMouseEvents": true, "color": "#2ca02c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ca02c", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_80775e0c9d79404075d32667024185b5 = L.popup({"maxWidth": 300});
+
+        
+            var html_a0b4ebb8f7bb8682ef8130d8c512a2b8 = $(`<div id="html_a0b4ebb8f7bb8682ef8130d8c512a2b8" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> ELECTRA SPECIAL 0310 FEDERAL COM #121H<br>     <b>Company:</b> MATADOR PRODUCTION COMPANY<br>     <b>Distance to Midland:</b> 99.8 mi<br>     <b>Distance to Carlsbad:</b> 33.6 mi     </div>`)[0];
+            popup_80775e0c9d79404075d32667024185b5.setContent(html_a0b4ebb8f7bb8682ef8130d8c512a2b8);
+        
+
+        circle_marker_357e7a3b271cef596631501ecb71908f.bindPopup(popup_80775e0c9d79404075d32667024185b5)
+        ;
+
+        
+    
+    
+            var circle_marker_1b8a665b318df0eaedd4f18b029fad46 = L.circleMarker(
+                [32.520840686046064, -103.66619096731891],
+                {"bubblingMouseEvents": true, "color": "#2ca02c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ca02c", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_4f45f5a5981deb9cda06d30d04362241 = L.popup({"maxWidth": 300});
+
+        
+            var html_28b9e65784ee9240a91ea1a0eec787f9 = $(`<div id="html_28b9e65784ee9240a91ea1a0eec787f9" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> ELECTRA SPECIAL 0310 FEDERAL COM #122H<br>     <b>Company:</b> MATADOR PRODUCTION COMPANY<br>     <b>Distance to Midland:</b> 99.7 mi<br>     <b>Distance to Carlsbad:</b> 33.6 mi     </div>`)[0];
+            popup_4f45f5a5981deb9cda06d30d04362241.setContent(html_28b9e65784ee9240a91ea1a0eec787f9);
+        
+
+        circle_marker_1b8a665b318df0eaedd4f18b029fad46.bindPopup(popup_4f45f5a5981deb9cda06d30d04362241)
+        ;
+
+        
+    
+    
+            var circle_marker_0849d9b1d5f8c74d4e1cffad62ab9d74 = L.circleMarker(
+                [32.138275602008854, -104.09425074106338],
+                {"bubblingMouseEvents": true, "color": "#ff7f0e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_654aa30c7615bf437f1f45a6fb29dd3d = L.popup({"maxWidth": 300});
+
+        
+            var html_e36e3c79d5c4dabdfda991108a06b0f5 = $(`<div id="html_e36e3c79d5c4dabdfda991108a06b0f5" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> SAN LORENZO 9 4 STATE COM #551H<br>     <b>Company:</b> MEWBOURNE OIL CO<br>     <b>Distance to Midland:</b> 118.7 mi<br>     <b>Distance to Carlsbad:</b> 21.0 mi     </div>`)[0];
+            popup_654aa30c7615bf437f1f45a6fb29dd3d.setContent(html_e36e3c79d5c4dabdfda991108a06b0f5);
+        
+
+        circle_marker_0849d9b1d5f8c74d4e1cffad62ab9d74.bindPopup(popup_654aa30c7615bf437f1f45a6fb29dd3d)
+        ;
+
+        
+    
+    
+            var circle_marker_6dcaacc7a6e97be5fecfc17c8f1122ab = L.circleMarker(
+                [32.138275602011724, -104.0941862410487],
+                {"bubblingMouseEvents": true, "color": "#ff7f0e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_78ee687f6cb1538c5d669c29cbbd94e7 = L.popup({"maxWidth": 300});
+
+        
+            var html_b8445659ba1fdfc6078740051a3397b4 = $(`<div id="html_b8445659ba1fdfc6078740051a3397b4" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> SAN LORENZO 9 4 STATE COM #553H<br>     <b>Company:</b> MEWBOURNE OIL CO<br>     <b>Distance to Midland:</b> 118.7 mi<br>     <b>Distance to Carlsbad:</b> 21.0 mi     </div>`)[0];
+            popup_78ee687f6cb1538c5d669c29cbbd94e7.setContent(html_b8445659ba1fdfc6078740051a3397b4);
+        
+
+        circle_marker_6dcaacc7a6e97be5fecfc17c8f1122ab.bindPopup(popup_78ee687f6cb1538c5d669c29cbbd94e7)
+        ;
+
+        
+    
+    
+            var circle_marker_37bc3e949bb729e1d375b98af1097a4f = L.circleMarker(
+                [32.13827570201458, -104.09412144103396],
+                {"bubblingMouseEvents": true, "color": "#ff7f0e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_16e3969eb0ab2692d805e07c7126c74b = L.popup({"maxWidth": 300});
+
+        
+            var html_39455f8dd7eb237a6aa85b4e516df4a7 = $(`<div id="html_39455f8dd7eb237a6aa85b4e516df4a7" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> SAN LORENZO 9 4 STATE COM #556H<br>     <b>Company:</b> MEWBOURNE OIL CO<br>     <b>Distance to Midland:</b> 118.7 mi<br>     <b>Distance to Carlsbad:</b> 21.0 mi     </div>`)[0];
+            popup_16e3969eb0ab2692d805e07c7126c74b.setContent(html_39455f8dd7eb237a6aa85b4e516df4a7);
+        
+
+        circle_marker_37bc3e949bb729e1d375b98af1097a4f.bindPopup(popup_16e3969eb0ab2692d805e07c7126c74b)
+        ;
+
+        
+    
+    
+            var circle_marker_b61148bac96d7975b7c3ca2e8f127155 = L.circleMarker(
+                [32.13827570201746, -104.09405694101932],
+                {"bubblingMouseEvents": true, "color": "#ff7f0e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_3e87202c435bb92c6b843465b02ce34c = L.popup({"maxWidth": 300});
+
+        
+            var html_ff58639218fc1bc7163088ecef48b491 = $(`<div id="html_ff58639218fc1bc7163088ecef48b491" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> SAN LORENZO 9 4 STATE COM #558H<br>     <b>Company:</b> MEWBOURNE OIL CO<br>     <b>Distance to Midland:</b> 118.7 mi<br>     <b>Distance to Carlsbad:</b> 21.0 mi     </div>`)[0];
+            popup_3e87202c435bb92c6b843465b02ce34c.setContent(html_ff58639218fc1bc7163088ecef48b491);
+        
+
+        circle_marker_b61148bac96d7975b7c3ca2e8f127155.bindPopup(popup_3e87202c435bb92c6b843465b02ce34c)
+        ;
+
+        
+    
+    
+            var circle_marker_f1de30d81ee751e6f1619c256b0f8da2 = L.circleMarker(
+                [32.1898053235275, -104.03150662997399],
+                {"bubblingMouseEvents": true, "color": "#dbdb8d", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#dbdb8d", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_fa27c4e8185b0613470e879a0a6f69ef = L.popup({"maxWidth": 300});
+
+        
+            var html_fa2d8bb6289479811b57c76d153f65c8 = $(`<div id="html_fa2d8bb6289479811b57c76d153f65c8" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> MONGO 25 FEDERAL COM #402H<br>     <b>Company:</b> 3R Operating, LLC<br>     <b>Distance to Midland:</b> 115.4 mi<br>     <b>Distance to Carlsbad:</b> 19.7 mi     </div>`)[0];
+            popup_fa27c4e8185b0613470e879a0a6f69ef.setContent(html_fa2d8bb6289479811b57c76d153f65c8);
+        
+
+        circle_marker_f1de30d81ee751e6f1619c256b0f8da2.bindPopup(popup_fa27c4e8185b0613470e879a0a6f69ef)
+        ;
+
+        
+    
+    
+            var circle_marker_f5760ff2e6e33220672db515c29d3bde = L.circleMarker(
+                [32.18972281351362, -104.03150552996865],
+                {"bubblingMouseEvents": true, "color": "#dbdb8d", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#dbdb8d", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_649636277a06465e362e3c4d1591aa91 = L.popup({"maxWidth": 300});
+
+        
+            var html_868e1f63b39aca31edc8f2c6103383b7 = $(`<div id="html_868e1f63b39aca31edc8f2c6103383b7" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> MONGO 25 FEDERAL COM #502H<br>     <b>Company:</b> 3R Operating, LLC<br>     <b>Distance to Midland:</b> 115.4 mi<br>     <b>Distance to Carlsbad:</b> 19.7 mi     </div>`)[0];
+            popup_649636277a06465e362e3c4d1591aa91.setContent(html_868e1f63b39aca31edc8f2c6103383b7);
+        
+
+        circle_marker_f5760ff2e6e33220672db515c29d3bde.bindPopup(popup_649636277a06465e362e3c4d1591aa91)
+        ;
+
+        
+    
+    
+            var circle_marker_03ba9bc5b7f92b336c34d9907866a0f2 = L.circleMarker(
+                [32.10881530517169, -103.91042819743524],
+                {"bubblingMouseEvents": true, "color": "#c7c7c7", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c7c7c7", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_332d4fe5cf016c1700c7f20251cb18bd = L.popup({"maxWidth": 300});
+
+        
+            var html_9afe6202938983799813295e7937b66a = $(`<div id="html_9afe6202938983799813295e7937b66a" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> POKER LAKE UNIT 20 BD #118H<br>     <b>Company:</b> XTO PERMIAN OPERATING LLC.<br>     <b>Distance to Midland:</b> 107.8 mi<br>     <b>Distance to Carlsbad:</b> 28.4 mi     </div>`)[0];
+            popup_332d4fe5cf016c1700c7f20251cb18bd.setContent(html_9afe6202938983799813295e7937b66a);
+        
+
+        circle_marker_03ba9bc5b7f92b336c34d9907866a0f2.bindPopup(popup_332d4fe5cf016c1700c7f20251cb18bd)
+        ;
+
+        
+    
+    
+            var circle_marker_df94e292831a52124405f96f0792886b = L.circleMarker(
+                [32.726440131412716, -103.4358924276249],
+                {"bubblingMouseEvents": true, "color": "#ff7f0e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_5e5b39a6d20cee4685ca65e56bf14633 = L.popup({"maxWidth": 300});
+
+        
+            var html_77a6679b5be2ba7ed233065686ef937d = $(`<div id="html_77a6679b5be2ba7ed233065686ef937d" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> SEAFOOD TOWER 22 15 STATE COM #527H<br>     <b>Company:</b> MEWBOURNE OIL CO<br>     <b>Distance to Midland:</b> 94.0 mi<br>     <b>Distance to Carlsbad:</b> 50.8 mi     </div>`)[0];
+            popup_5e5b39a6d20cee4685ca65e56bf14633.setContent(html_77a6679b5be2ba7ed233065686ef937d);
+        
+
+        circle_marker_df94e292831a52124405f96f0792886b.bindPopup(popup_5e5b39a6d20cee4685ca65e56bf14633)
+        ;
+
+        
+    
+    
+            var circle_marker_73c76a50f892cb9888e56a89f8257082 = L.circleMarker(
+                [32.72643943141862, -103.4357622275949],
+                {"bubblingMouseEvents": true, "color": "#ff7f0e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_b07885e227d971eaca3025e122b9a37e = L.popup({"maxWidth": 300});
+
+        
+            var html_4390a7afcec02029052da0e556b1c781 = $(`<div id="html_4390a7afcec02029052da0e556b1c781" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> PICANHA 23 14 STATE COM #523H<br>     <b>Company:</b> MEWBOURNE OIL CO<br>     <b>Distance to Midland:</b> 94.0 mi<br>     <b>Distance to Carlsbad:</b> 50.8 mi     </div>`)[0];
+            popup_b07885e227d971eaca3025e122b9a37e.setContent(html_4390a7afcec02029052da0e556b1c781);
+        
+
+        circle_marker_73c76a50f892cb9888e56a89f8257082.bindPopup(popup_b07885e227d971eaca3025e122b9a37e)
+        ;
+
+        
+    
+    
+            var circle_marker_08ed3d4f2a0c6a6c29d6e1efd1044cad = L.circleMarker(
+                [32.16629393361199, -103.48991920479855],
+                {"bubblingMouseEvents": true, "color": "#aec7e8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#aec7e8", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_ced03c90b5df72ab4c3e24f924858b04 = L.popup({"maxWidth": 300});
+
+        
+            var html_5fdbb9b3d9bb2f84daa00a3ec0c02bc4 = $(`<div id="html_5fdbb9b3d9bb2f84daa00a3ec0c02bc4" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> SHIPROCK 5 FED COM #708H<br>     <b>Company:</b> EOG RESOURCES INC<br>     <b>Distance to Midland:</b> 83.6 mi<br>     <b>Distance to Carlsbad:</b> 46.7 mi     </div>`)[0];
+            popup_ced03c90b5df72ab4c3e24f924858b04.setContent(html_5fdbb9b3d9bb2f84daa00a3ec0c02bc4);
+        
+
+        circle_marker_08ed3d4f2a0c6a6c29d6e1efd1044cad.bindPopup(popup_ced03c90b5df72ab4c3e24f924858b04)
+        ;
+
+        
+    
+    
+            var circle_marker_13f91a69699f6587bd47dc6da05d7bb6 = L.circleMarker(
+                [32.16596463371086, -103.4864172039748],
+                {"bubblingMouseEvents": true, "color": "#aec7e8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#aec7e8", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_14f284ea7c9a95f030b8123d3c2b9b32 = L.popup({"maxWidth": 300});
+
+        
+            var html_ef659583161d64e5b4811701654204db = $(`<div id="html_ef659583161d64e5b4811701654204db" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> SHIPROCK 5 FED COM #741H<br>     <b>Company:</b> EOG RESOURCES INC<br>     <b>Distance to Midland:</b> 83.4 mi<br>     <b>Distance to Carlsbad:</b> 46.9 mi     </div>`)[0];
+            popup_14f284ea7c9a95f030b8123d3c2b9b32.setContent(html_ef659583161d64e5b4811701654204db);
+        
+
+        circle_marker_13f91a69699f6587bd47dc6da05d7bb6.bindPopup(popup_14f284ea7c9a95f030b8123d3c2b9b32)
+        ;
+
+        
+    
+    
+            var circle_marker_10bde0f5a404a959132c6de1ab198707 = L.circleMarker(
+                [32.16514433326109, -103.49339600552592],
+                {"bubblingMouseEvents": true, "color": "#aec7e8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#aec7e8", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_8bd35e3eb95094225165b30f4d8429e6 = L.popup({"maxWidth": 300});
+
+        
+            var html_089b81bc4c21aacd416f23a31070f384 = $(`<div id="html_089b81bc4c21aacd416f23a31070f384" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> SHIPROCK 5 FED COM #743H<br>     <b>Company:</b> EOG RESOURCES INC<br>     <b>Distance to Midland:</b> 83.8 mi<br>     <b>Distance to Carlsbad:</b> 46.5 mi     </div>`)[0];
+            popup_8bd35e3eb95094225165b30f4d8429e6.setContent(html_089b81bc4c21aacd416f23a31070f384);
+        
+
+        circle_marker_10bde0f5a404a959132c6de1ab198707.bindPopup(popup_8bd35e3eb95094225165b30f4d8429e6)
+        ;
+
+        
+    
+    
+            var circle_marker_d526fca5d84f880932fb2c6bd336c01c = L.circleMarker(
+                [32.16514443325639, -103.49350260555043],
+                {"bubblingMouseEvents": true, "color": "#aec7e8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#aec7e8", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_78a80b761ee8a26bdf5a29f9ec20e674 = L.popup({"maxWidth": 300});
+
+        
+            var html_b7a21f6005065dc7f9291f783df4bf99 = $(`<div id="html_b7a21f6005065dc7f9291f783df4bf99" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> SHIPROCK 5 FED COM #744H<br>     <b>Company:</b> EOG RESOURCES INC<br>     <b>Distance to Midland:</b> 83.8 mi<br>     <b>Distance to Carlsbad:</b> 46.5 mi     </div>`)[0];
+            popup_78a80b761ee8a26bdf5a29f9ec20e674.setContent(html_b7a21f6005065dc7f9291f783df4bf99);
+        
+
+        circle_marker_d526fca5d84f880932fb2c6bd336c01c.bindPopup(popup_78a80b761ee8a26bdf5a29f9ec20e674)
+        ;
+
+        
+    
+    
+            var circle_marker_e1d117a82dcb8b3702f2b4be5ca5dcc7 = L.circleMarker(
+                [32.683037526817564, -103.37594241103399],
+                {"bubblingMouseEvents": true, "color": "#ff7f0e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_52483db83fef77743db1b95dc8b6d1fe = L.popup({"maxWidth": 300});
+
+        
+            var html_5c0e4819db2388353011ad320bbb8ded = $(`<div id="html_5c0e4819db2388353011ad320bbb8ded" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> HIGH SEA 8 20 FEDERAL COM #522H<br>     <b>Company:</b> MEWBOURNE OIL CO<br>     <b>Distance to Midland:</b> 89.4 mi<br>     <b>Distance to Carlsbad:</b> 53.0 mi     </div>`)[0];
+            popup_52483db83fef77743db1b95dc8b6d1fe.setContent(html_5c0e4819db2388353011ad320bbb8ded);
+        
+
+        circle_marker_e1d117a82dcb8b3702f2b4be5ca5dcc7.bindPopup(popup_52483db83fef77743db1b95dc8b6d1fe)
+        ;
+
+        
+    
+    
+            var circle_marker_2c2f1be85620c0da6df2b3f93b0320cc = L.circleMarker(
+                [32.6829825268082, -103.3759423110304],
+                {"bubblingMouseEvents": true, "color": "#ff7f0e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_3688c721ad9ade340683f2f360a248a7 = L.popup({"maxWidth": 300});
+
+        
+            var html_f1623cbab85229e7282e6de3cba5d49b = $(`<div id="html_f1623cbab85229e7282e6de3cba5d49b" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> WORLDS END 5 29 STATE COM #522H<br>     <b>Company:</b> MEWBOURNE OIL CO<br>     <b>Distance to Midland:</b> 89.4 mi<br>     <b>Distance to Carlsbad:</b> 53.0 mi     </div>`)[0];
+            popup_3688c721ad9ade340683f2f360a248a7.setContent(html_f1623cbab85229e7282e6de3cba5d49b);
+        
+
+        circle_marker_2c2f1be85620c0da6df2b3f93b0320cc.bindPopup(popup_3688c721ad9ade340683f2f360a248a7)
+        ;
+
+        
+    
+    
+            var circle_marker_a68e67a7f02aa2a755d23885e732460f = L.circleMarker(
+                [32.16514423326611, -103.49328290550001],
+                {"bubblingMouseEvents": true, "color": "#aec7e8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#aec7e8", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_35249f66d6ebea67c463c037df78964e = L.popup({"maxWidth": 300});
+
+        
+            var html_1f1e7fce9344d7078cbf70baff94c4ed = $(`<div id="html_1f1e7fce9344d7078cbf70baff94c4ed" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> SHIPROCK 5 FED COM #404H<br>     <b>Company:</b> EOG RESOURCES INC<br>     <b>Distance to Midland:</b> 83.8 mi<br>     <b>Distance to Carlsbad:</b> 46.5 mi     </div>`)[0];
+            popup_35249f66d6ebea67c463c037df78964e.setContent(html_1f1e7fce9344d7078cbf70baff94c4ed);
+        
+
+        circle_marker_a68e67a7f02aa2a755d23885e732460f.bindPopup(popup_35249f66d6ebea67c463c037df78964e)
+        ;
+
+        
+    
+    
+            var circle_marker_9d108f254ac6ec011abd6833dff541f5 = L.circleMarker(
+                [32.34572683853646, -104.06128494644203],
+                {"bubblingMouseEvents": true, "color": "#2ca02c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ca02c", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_68965b76082b8bd455246d70d2aad093 = L.popup({"maxWidth": 300});
+
+        
+            var html_5fc393155c76616b03023f9526041b7d = $(`<div id="html_5fc393155c76616b03023f9526041b7d" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> MAMA JO 3531 FEDERAL COM #134H<br>     <b>Company:</b> MATADOR PRODUCTION COMPANY<br>     <b>Distance to Midland:</b> 118.7 mi<br>     <b>Distance to Carlsbad:</b> 11.1 mi     </div>`)[0];
+            popup_68965b76082b8bd455246d70d2aad093.setContent(html_5fc393155c76616b03023f9526041b7d);
+        
+
+        circle_marker_9d108f254ac6ec011abd6833dff541f5.bindPopup(popup_68965b76082b8bd455246d70d2aad093)
+        ;
+
+        
+    
+    
+            var circle_marker_c1c98908e61c9d69753a56542834a1da = L.circleMarker(
+                [32.73079721306582, -103.84863392252085],
+                {"bubblingMouseEvents": true, "color": "#ff7f0e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_199378d3e6969164e3b357c8e6f3b2be = L.popup({"maxWidth": 300});
+
+        
+            var html_7cd09d42e47a4bf00b36ff2705b75007 = $(`<div id="html_7cd09d42e47a4bf00b36ff2705b75007" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> NEATO BANDITO 23 24 FEDERAL COM #407H<br>     <b>Company:</b> MEWBOURNE OIL CO<br>     <b>Distance to Midland:</b> 115.2 mi<br>     <b>Distance to Carlsbad:</b> 30.8 mi     </div>`)[0];
+            popup_199378d3e6969164e3b357c8e6f3b2be.setContent(html_7cd09d42e47a4bf00b36ff2705b75007);
+        
+
+        circle_marker_c1c98908e61c9d69753a56542834a1da.bindPopup(popup_199378d3e6969164e3b357c8e6f3b2be)
+        ;
+
+        
+    
+    
+            var circle_marker_ec82db9e1c30ef5395304dee1d40e38e = L.circleMarker(
+                [32.817370315183915, -104.11445248876548],
+                {"bubblingMouseEvents": true, "color": "#17becf", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#17becf", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_321b82e855e3837f7eecbc3a1ea6dbba = L.popup({"maxWidth": 300});
+
+        
+            var html_4806edbf024ba253a1369cfd17dffc09 = $(`<div id="html_4806edbf024ba253a1369cfd17dffc09" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> ABACO STATE COM #110H<br>     <b>Company:</b> Spur Energy Partners LLC<br>     <b>Distance to Midland:</b> 131.8 mi<br>     <b>Distance to Carlsbad:</b> 28.1 mi     </div>`)[0];
+            popup_321b82e855e3837f7eecbc3a1ea6dbba.setContent(html_4806edbf024ba253a1369cfd17dffc09);
+        
+
+        circle_marker_ec82db9e1c30ef5395304dee1d40e38e.bindPopup(popup_321b82e855e3837f7eecbc3a1ea6dbba)
+        ;
+
+        
+    
+    
+            var circle_marker_adb6dd73c9263982af7b3aafb0328061 = L.circleMarker(
+                [32.77719821294297, -104.01869296433726],
+                {"bubblingMouseEvents": true, "color": "#ff7f0e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_a95b9155f027be0edd8fb59f3d7a2e38 = L.popup({"maxWidth": 300});
+
+        
+            var html_08e762827d3cdebe4388cf80863bfa85 = $(`<div id="html_08e762827d3cdebe4388cf80863bfa85" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> CERROS LOCOS 6 4 FEDERAL COM #521H<br>     <b>Company:</b> MEWBOURNE OIL CO<br>     <b>Distance to Midland:</b> 125.6 mi<br>     <b>Distance to Carlsbad:</b> 27.5 mi     </div>`)[0];
+            popup_a95b9155f027be0edd8fb59f3d7a2e38.setContent(html_08e762827d3cdebe4388cf80863bfa85);
+        
+
+        circle_marker_adb6dd73c9263982af7b3aafb0328061.bindPopup(popup_a95b9155f027be0edd8fb59f3d7a2e38)
+        ;
+
+        
+    
+    
+            var circle_marker_94d27f763e60552760ebac9c3cbeb391 = L.circleMarker(
+                [32.23988134844524, -103.43948409774242],
+                {"bubblingMouseEvents": true, "color": "#98df8a", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#98df8a", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_3b70e935bada075a2c3fa9d426a587b6 = L.popup({"maxWidth": 300});
+
+        
+            var html_9cbbcc03cfa0e06e5df81cf339cbb2b6 = $(`<div id="html_9cbbcc03cfa0e06e5df81cf339cbb2b6" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> CANYONLANDS 2 STATE COM #402H<br>     <b>Company:</b> Coterra Energy Operating Co.<br>     <b>Distance to Midland:</b> 81.6 mi<br>     <b>Distance to Carlsbad:</b> 47.8 mi     </div>`)[0];
+            popup_3b70e935bada075a2c3fa9d426a587b6.setContent(html_9cbbcc03cfa0e06e5df81cf339cbb2b6);
+        
+
+        circle_marker_94d27f763e60552760ebac9c3cbeb391.bindPopup(popup_3b70e935bada075a2c3fa9d426a587b6)
+        ;
+
+        
+    
+    
+            var circle_marker_62eed51cdcecd243050d54964ec61ff7 = L.circleMarker(
+                [32.730797413074875, -103.84843902247633],
+                {"bubblingMouseEvents": true, "color": "#ff7f0e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_e731a6b7e043eacd91f6b68ee92c33c9 = L.popup({"maxWidth": 300});
+
+        
+            var html_6bffeeb8d12a884168339ad6fe6265e7 = $(`<div id="html_6bffeeb8d12a884168339ad6fe6265e7" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> NEATO BANDITO 23 24 FEDERAL COM #526H<br>     <b>Company:</b> MEWBOURNE OIL CO<br>     <b>Distance to Midland:</b> 115.2 mi<br>     <b>Distance to Carlsbad:</b> 30.8 mi     </div>`)[0];
+            popup_e731a6b7e043eacd91f6b68ee92c33c9.setContent(html_6bffeeb8d12a884168339ad6fe6265e7);
+        
+
+        circle_marker_62eed51cdcecd243050d54964ec61ff7.bindPopup(popup_e731a6b7e043eacd91f6b68ee92c33c9)
+        ;
+
+        
+    
+    
+            var circle_marker_a7337cfcb8d73ea84f805cb44b048ba8 = L.circleMarker(
+                [32.066451292389274, -104.03664122357456],
+                {"bubblingMouseEvents": true, "color": "#aec7e8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#aec7e8", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_b9b74712666599c8b937081848d42875 = L.popup({"maxWidth": 300});
+
+        
+            var html_7e984456a0dc79d1d5234c9a0dd6d249 = $(`<div id="html_7e984456a0dc79d1d5234c9a0dd6d249" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> GOLDEN GRAHAM 1 FEDERAL COM #504H<br>     <b>Company:</b> EOG RESOURCES INC<br>     <b>Distance to Midland:</b> 115.1 mi<br>     <b>Distance to Carlsbad:</b> 26.9 mi     </div>`)[0];
+            popup_b9b74712666599c8b937081848d42875.setContent(html_7e984456a0dc79d1d5234c9a0dd6d249);
+        
+
+        circle_marker_a7337cfcb8d73ea84f805cb44b048ba8.bindPopup(popup_b9b74712666599c8b937081848d42875)
+        ;
+
+        
+    
+    
+            var circle_marker_7e6100664e266f9b966ee9771c080711 = L.circleMarker(
+                [32.06636429237593, -104.036609323562],
+                {"bubblingMouseEvents": true, "color": "#aec7e8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#aec7e8", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_4eb7341f826915ae91e8d53596ca92d0 = L.popup({"maxWidth": 300});
+
+        
+            var html_075634844340a1b263244e40c21af95a = $(`<div id="html_075634844340a1b263244e40c21af95a" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> GOLDEN GRAHAM 1 FEDERAL COM #582H<br>     <b>Company:</b> EOG RESOURCES INC<br>     <b>Distance to Midland:</b> 115.1 mi<br>     <b>Distance to Carlsbad:</b> 26.9 mi     </div>`)[0];
+            popup_4eb7341f826915ae91e8d53596ca92d0.setContent(html_075634844340a1b263244e40c21af95a);
+        
+
+        circle_marker_7e6100664e266f9b966ee9771c080711.bindPopup(popup_4eb7341f826915ae91e8d53596ca92d0)
+        ;
+
+        
+    
+    
+            var circle_marker_4957428b79e793819a83c1fefe5d1487 = L.circleMarker(
+                [32.38040433793953, -104.20351428092819],
+                {"bubblingMouseEvents": true, "color": "#9edae5", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9edae5", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_5ffed0119ee30efd1bf0a3939525d442 = L.popup({"maxWidth": 300});
+
+        
+            var html_ba32c21c2a27402c758618d8fa3b4fe9 = $(`<div id="html_ba32c21c2a27402c758618d8fa3b4fe9" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> THE DUDE FEE COM 20 19 #502H<br>     <b>Company:</b> Paloma Permian AssetCo, LLC<br>     <b>Distance to Midland:</b> 127.3 mi<br>     <b>Distance to Carlsbad:</b> 3.1 mi     </div>`)[0];
+            popup_5ffed0119ee30efd1bf0a3939525d442.setContent(html_ba32c21c2a27402c758618d8fa3b4fe9);
+        
+
+        circle_marker_4957428b79e793819a83c1fefe5d1487.bindPopup(popup_5ffed0119ee30efd1bf0a3939525d442)
+        ;
+
+        
+    
+    
+            var circle_marker_4cc5a3a21ec765e003d4b5b1c4e46cd5 = L.circleMarker(
+                [32.38034933793031, -104.20351428092472],
+                {"bubblingMouseEvents": true, "color": "#9edae5", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9edae5", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_631f12cd913045dfd68fe60c0af87b4e = L.popup({"maxWidth": 300});
+
+        
+            var html_dda28bbf0e97222406e91ebdf755ef78 = $(`<div id="html_dda28bbf0e97222406e91ebdf755ef78" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> THE DUDE FEE COM 20 19 #501H<br>     <b>Company:</b> Paloma Permian AssetCo, LLC<br>     <b>Distance to Midland:</b> 127.3 mi<br>     <b>Distance to Carlsbad:</b> 3.1 mi     </div>`)[0];
+            popup_631f12cd913045dfd68fe60c0af87b4e.setContent(html_dda28bbf0e97222406e91ebdf755ef78);
+        
+
+        circle_marker_4cc5a3a21ec765e003d4b5b1c4e46cd5.bindPopup(popup_631f12cd913045dfd68fe60c0af87b4e)
+        ;
+
+        
+    
+    
+            var circle_marker_633c881642ecb1e87a018fbbff4db7c8 = L.circleMarker(
+                [32.30592093953423, -103.88982290490759],
+                {"bubblingMouseEvents": true, "color": "#ff7f0e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_d4a7a46c29bbdfd373dd95845d78f4ad = L.popup({"maxWidth": 300});
+
+        
+            var html_5bb44f7d63a69133658599598069738f = $(`<div id="html_5bb44f7d63a69133658599598069738f" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> FORTY NINER RIDGE UNIT COM #143H<br>     <b>Company:</b> MEWBOURNE OIL CO<br>     <b>Distance to Midland:</b> 108.3 mi<br>     <b>Distance to Carlsbad:</b> 21.3 mi     </div>`)[0];
+            popup_d4a7a46c29bbdfd373dd95845d78f4ad.setContent(html_5bb44f7d63a69133658599598069738f);
+        
+
+        circle_marker_633c881642ecb1e87a018fbbff4db7c8.bindPopup(popup_d4a7a46c29bbdfd373dd95845d78f4ad)
+        ;
+
+        
+    
+    
+            var circle_marker_29b980dc0413a3a7d3eca00dcd4a8c4b = L.circleMarker(
+                [32.305920639537064, -103.88975810489275],
+                {"bubblingMouseEvents": true, "color": "#ff7f0e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_cb4bb3723e781be9d29cd6800ddbdd99 = L.popup({"maxWidth": 300});
+
+        
+            var html_0cae94118041812fef66ac258177c303 = $(`<div id="html_0cae94118041812fef66ac258177c303" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> FORTY NINER RIDGE UNIT COM #144H<br>     <b>Company:</b> MEWBOURNE OIL CO<br>     <b>Distance to Midland:</b> 108.3 mi<br>     <b>Distance to Carlsbad:</b> 21.3 mi     </div>`)[0];
+            popup_cb4bb3723e781be9d29cd6800ddbdd99.setContent(html_0cae94118041812fef66ac258177c303);
+        
+
+        circle_marker_29b980dc0413a3a7d3eca00dcd4a8c4b.bindPopup(popup_cb4bb3723e781be9d29cd6800ddbdd99)
+        ;
+
+        
+    
+    
+            var circle_marker_0a9fd88fbf77b4ecbdb5bc927daef1aa = L.circleMarker(
+                [32.06610429233594, -104.03651522352476],
+                {"bubblingMouseEvents": true, "color": "#aec7e8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#aec7e8", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_b12f1accab56ab31c4e8358d5e56ad68 = L.popup({"maxWidth": 300});
+
+        
+            var html_6ff6b1e1ca3a0d6fdffe7671cb4833f1 = $(`<div id="html_6ff6b1e1ca3a0d6fdffe7671cb4833f1" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> GOLDEN GRAHAM 1 FEDERAL COM #505H<br>     <b>Company:</b> EOG RESOURCES INC<br>     <b>Distance to Midland:</b> 115.1 mi<br>     <b>Distance to Carlsbad:</b> 26.9 mi     </div>`)[0];
+            popup_b12f1accab56ab31c4e8358d5e56ad68.setContent(html_6ff6b1e1ca3a0d6fdffe7671cb4833f1);
+        
+
+        circle_marker_0a9fd88fbf77b4ecbdb5bc927daef1aa.bindPopup(popup_b12f1accab56ab31c4e8358d5e56ad68)
+        ;
+
+        
+    
+    
+            var circle_marker_01355c8e2dd6f3ede779901c770975ee = L.circleMarker(
+                [32.0662782923627, -104.03657822354968],
+                {"bubblingMouseEvents": true, "color": "#aec7e8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#aec7e8", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_c9e919812dab4f86eef1549a12eee7f4 = L.popup({"maxWidth": 300});
+
+        
+            var html_9ce5e5932fbb2ac95e40b5c07de5a3fc = $(`<div id="html_9ce5e5932fbb2ac95e40b5c07de5a3fc" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> GOLDEN GRAHAM 1 FEDERAL COM #506H<br>     <b>Company:</b> EOG RESOURCES INC<br>     <b>Distance to Midland:</b> 115.1 mi<br>     <b>Distance to Carlsbad:</b> 26.9 mi     </div>`)[0];
+            popup_c9e919812dab4f86eef1549a12eee7f4.setContent(html_9ce5e5932fbb2ac95e40b5c07de5a3fc);
+        
+
+        circle_marker_01355c8e2dd6f3ede779901c770975ee.bindPopup(popup_c9e919812dab4f86eef1549a12eee7f4)
+        ;
+
+        
+    
+    
+            var circle_marker_32e7fd3a00b82e31569da28c02f30493 = L.circleMarker(
+                [32.066191292349274, -104.03654722353734],
+                {"bubblingMouseEvents": true, "color": "#aec7e8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#aec7e8", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_6279f602f0bada90f83705bf546dc608 = L.popup({"maxWidth": 300});
+
+        
+            var html_7670487f87bcb671aa86c1f08250876f = $(`<div id="html_7670487f87bcb671aa86c1f08250876f" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> GOLDEN GRAHAM 1 FEDERAL COM #592H<br>     <b>Company:</b> EOG RESOURCES INC<br>     <b>Distance to Midland:</b> 115.1 mi<br>     <b>Distance to Carlsbad:</b> 26.9 mi     </div>`)[0];
+            popup_6279f602f0bada90f83705bf546dc608.setContent(html_7670487f87bcb671aa86c1f08250876f);
+        
+
+        circle_marker_32e7fd3a00b82e31569da28c02f30493.bindPopup(popup_6279f602f0bada90f83705bf546dc608)
+        ;
+
+        
+    
+    
+            var circle_marker_0ea7f0d2b8ddbb17326430da8427fba3 = L.circleMarker(
+                [32.726439731415674, -103.43582742760994],
+                {"bubblingMouseEvents": true, "color": "#ff7f0e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_88e0c699524e4e0de16c4f8e02fd999d = L.popup({"maxWidth": 300});
+
+        
+            var html_55dac41e6777903f75d2a2f0e0b26a6e = $(`<div id="html_55dac41e6777903f75d2a2f0e0b26a6e" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> PICANHA 23 14 STATE COM #521H<br>     <b>Company:</b> MEWBOURNE OIL CO<br>     <b>Distance to Midland:</b> 94.0 mi<br>     <b>Distance to Carlsbad:</b> 50.8 mi     </div>`)[0];
+            popup_88e0c699524e4e0de16c4f8e02fd999d.setContent(html_55dac41e6777903f75d2a2f0e0b26a6e);
+        
+
+        circle_marker_0ea7f0d2b8ddbb17326430da8427fba3.bindPopup(popup_88e0c699524e4e0de16c4f8e02fd999d)
+        ;
+
+        
+    
+    
+            var circle_marker_56bef2767acf58f5b3899b99782a7d0a = L.circleMarker(
+                [32.30592263951994, -103.89014640498144],
+                {"bubblingMouseEvents": true, "color": "#ff7f0e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_d90729569a148d70c9038088dda5c11b);
+        
+    
+        var popup_cbbc19ac3f3d2385e2b20b89a5eb3b50 = L.popup({"maxWidth": 300});
+
+        
+            var html_aeb3598b4e0ff72de1d064f59b0edf64 = $(`<div id="html_aeb3598b4e0ff72de1d064f59b0edf64" style="width: 100.0%; height: 100.0%;">     <b>Well Name:</b> FORTY NINER RIDGE UNIT COM #138H<br>     <b>Company:</b> MEWBOURNE OIL CO<br>     <b>Distance to Midland:</b> 108.3 mi<br>     <b>Distance to Carlsbad:</b> 21.3 mi     </div>`)[0];
+            popup_cbbc19ac3f3d2385e2b20b89a5eb3b50.setContent(html_aeb3598b4e0ff72de1d064f59b0edf64);
+        
+
+        circle_marker_56bef2767acf58f5b3899b99782a7d0a.bindPopup(popup_cbbc19ac3f3d2385e2b20b89a5eb3b50)
+        ;
+
+        
+    
+</script>
+</html>
